@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 type CtaStripProps = {
@@ -9,6 +10,10 @@ type CtaStripProps = {
   primaryHref?: string;
   secondaryLabel?: string;
   secondaryHref?: string;
+  imageSrc?: string;
+  imageAlt?: string;
+  fullWidth?: boolean;
+  bottomRoundedOnly?: boolean;
 };
 
 export function CtaStrip({
@@ -19,22 +24,52 @@ export function CtaStrip({
   primaryHref = "/contact",
   secondaryLabel = "Learn More",
   secondaryHref = "/about",
+  imageSrc,
+  imageAlt = "CTA visual",
+  fullWidth = false,
+  bottomRoundedOnly = false,
 }: CtaStripProps) {
+  const radiusClass = bottomRoundedOnly ? "rounded-b-[52px]" : "rounded-[2rem]";
+
   return (
-    <section id={id} className="scroll-mt-28 py-12 md:py-16">
-      <div className="container-shell">
-        <div className="relative overflow-hidden rounded-[2rem] border border-[#EB8B2E]/25 bg-secondary px-6 py-10 text-secondary-foreground md:px-10 md:py-12">
+    <section id={id} className="scroll-mt-28 py-12 md:py-18">
+      <div className={fullWidth ? "" : "container-shell"}>
+        <div
+          className={`relative overflow-hidden border border-[#EB8B2E]/25 bg-secondary text-secondary-foreground ${radiusClass} ${
+            imageSrc
+              ? "grid gap-0 md:min-h-[470px] md:grid-cols-12"
+              : "px-6 py-10 md:px-10 md:py-12"
+          }`}
+        >
           <div className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-[#EB8B2E]/15 blur-3xl" />
           <div className="pointer-events-none absolute -left-10 -bottom-16 h-48 w-48 rounded-full bg-white/5 blur-3xl" />
 
-          <div className="relative z-10">
-            <p className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[#EB8B2E]">
+          {imageSrc ? (
+            <div className="relative min-h-[300px] md:col-span-7 md:min-h-[470px]">
+              <Image
+                src={imageSrc}
+                alt={imageAlt}
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-secondary/50 via-secondary/20 to-transparent md:hidden" />
+            </div>
+          ) : null}
+
+          <div
+            className={`relative z-10 ${
+              imageSrc
+                ? "px-6 py-10 md:col-span-5 md:flex md:flex-col md:justify-center md:px-10 md:py-12"
+                : ""
+            }`}
+          >
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[#EB8B2E] w-fit">
               <Sparkles className="h-3.5 w-3.5" />
               Let&apos;s Build Together
-            </p>
+            </span>
 
-            <h3 className="mt-5 text-3xl font-bold tracking-tight md:text-4xl">{title}</h3>
-            <p className="mt-4 max-w-2xl text-sm leading-7 text-secondary-foreground/80 md:text-base">
+            <h3 className="mt-5 text-3xl font-bold tracking-tight md:text-5xl">{title}</h3>
+            <p className="mt-4 max-w-2xl text-base leading-8 text-secondary-foreground/80">
               {description}
             </p>
 

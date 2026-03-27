@@ -17,6 +17,7 @@ import {
   TrendingUp,
   BarChart3,
   Award,
+  Star,
 } from "lucide-react";
 
 const divisions = [
@@ -54,6 +55,29 @@ const highlights = [
     icon: BarChart3,
   },
 ];
+
+const landingTestimonials = [
+  {
+    author: "Regional Trading Client",
+    date: "2026-03-10",
+    quote:
+      "Eaglewise helped us streamline reporting and improve financial visibility within a short timeframe.",
+  },
+  {
+    author: "UAE Consultancy Client",
+    date: "2026-03-01",
+    quote:
+      "The team is practical, responsive, and clear in communication. Their advisory support has been valuable for planning.",
+  },
+  {
+    author: "Business Advisory Client",
+    date: "2026-02-19",
+    quote:
+      "Communication has been clear and professional from day one. We saw stronger execution across our regional operations.",
+  },
+];
+
+const marqueeTestimonials = [...landingTestimonials, ...landingTestimonials];
 
 // Reusable animation variants
 const fadeInUp: Variants = {
@@ -425,6 +449,66 @@ export default function Home() {
         </div>
       </div>
 
+      <section className="bg-surface-alt py-14 md:py-18">
+        <div className="container-shell">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#EB8B2E]">
+              Testimonials
+            </p>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
+              Read our reviews to find out more about us
+            </h2>
+            <p className="mt-4 text-base text-muted-foreground md:text-lg">
+              Real feedback from clients and partners we have supported.
+            </p>
+          </div>
+
+          <div className="relative mt-10 overflow-hidden">
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-surface-alt to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-surface-alt to-transparent" />
+
+            <motion.div
+              initial={{ x: "0%" }}
+              animate={{ x: "-50%" }}
+              transition={{ duration: 34, ease: "linear", repeat: Infinity }}
+              className="flex w-max gap-4"
+            >
+              {marqueeTestimonials.map((item, idx) => (
+                <article
+                  key={`${item.author}-${item.date}-${idx}`}
+                  className="w-[300px] rounded-3xl border border-border/60 bg-surface p-6 md:w-[360px]"
+                >
+                  <div className="mb-4 flex items-center justify-between">
+                    <div className="flex items-center gap-1">
+                      {Array.from({ length: 5 }).map((_, starIdx) => (
+                        <Star
+                          key={`${item.author}-star-${starIdx}-${idx}`}
+                          className="h-4 w-4 fill-[#EB8B2E] text-[#EB8B2E]"
+                        />
+                      ))}
+                    </div>
+                    <span className="text-xs font-medium text-muted-foreground">{item.date}</span>
+                  </div>
+                  <p className="text-sm font-semibold text-foreground">{item.author}</p>
+                  <p className="mt-3 text-base leading-7 text-muted-foreground">{item.quote}</p>
+                  <p className="mt-6 text-sm font-semibold text-foreground">Trustpilot</p>
+                </article>
+              ))}
+            </motion.div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link
+              href="/testimonials"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-6 py-3 text-sm font-semibold text-foreground transition hover:border-[#EB8B2E]/40 hover:text-[#EB8B2E]"
+            >
+              View all testimonials
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="border-t border-border/30 bg-transparent py-8 md:py-12">
         <div className="container-shell">
           <div className="flex flex-col items-center justify-between gap-6 overflow-hidden md:flex-row">
@@ -455,6 +539,10 @@ export default function Home() {
         primaryHref="/contact"
         secondaryLabel="Read Company Profile"
         secondaryHref="/about"
+        imageSrc="/cta-executive-meeting.jpg"
+        imageAlt="Executive boardroom meeting"
+        fullWidth
+        bottomRoundedOnly
       />
     </SiteShell>
   );
