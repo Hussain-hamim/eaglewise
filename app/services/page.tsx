@@ -31,6 +31,7 @@ export default function ServicesPage() {
   return (
     <SiteShell>
       <Section
+        id="professional-services"
         eyebrow="Professional Services"
         title="Consultancy support built for results"
         description="We provide practical services for companies in the UAE and international markets, focused on efficiency, compliance, and sustainable growth."
@@ -48,6 +49,7 @@ export default function ServicesPage() {
       </Section>
 
       <Section
+        id="how-we-work"
         title="How we work"
         description="Our engagements are structured to provide clarity from day one while remaining flexible to your operating context."
       >
@@ -75,6 +77,7 @@ export default function ServicesPage() {
       </Section>
 
       <CtaStrip
+        id="request-consultation"
         title="Need a tailored consultancy package?"
         description="Share your current challenge and we will recommend the right service scope."
         primaryLabel="Request Consultation"

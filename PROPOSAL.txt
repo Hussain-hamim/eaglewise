@@ -1,0 +1,78 @@
+================================================================================
+PROPOSAL — Eaglewise Business Consultancy LLC-FZ — Corporate Website
+================================================================================
+
+Prepared for:     [Client name]
+Prepared by:      [Your name]
+Date:             [Date]
+Duration:         One (1) week from kickoff to handover
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+
+Build and deliver a modern multi-page corporate website for Eaglewise Business
+Consultancy LLC-FZ: Home, About, Services, Markets, Testimonials, FAQ, and
+Contact. Design is responsive, brand-aligned (primary color #EB8B2E), and
+suitable for B2B partners and clients.
+
+--------------------------------------------------------------------------------
+DELIVERABLES
+--------------------------------------------------------------------------------
+
+• Working website (source code + production build)
+• Pages and content aligned with the agreed corporate profile
+• Logo and hero imagery integrated; contact section ready for official details
+• Short handover: how to run locally, where to change copy and assets
+
+--------------------------------------------------------------------------------
+TECHNICAL STACK
+--------------------------------------------------------------------------------
+
+• Next.js (App Router) + React + TypeScript
+• Tailwind CSS
+• Lucide icons
+• Static assets under /public; images optimized where applicable
+
+--------------------------------------------------------------------------------
+ONE-WEEK PLAN
+--------------------------------------------------------------------------------
+
+Week 1: Finalize sitemap and assets → build all pages → UI polish and responsive
+→ client review → fixes → QA, build, handover.
+
+Delays in final copy, logos, or contact details may push placeholders until
+you supply them.
+
+--------------------------------------------------------------------------------
+CLIENT PROVIDES
+--------------------------------------------------------------------------------
+
+• Final logo files (transparent PNG/SVG preferred)
+• Official phone, email, address, website for Contact
+• Approved testimonials if you want real quotes (otherwise placeholders)
+
+--------------------------------------------------------------------------------
+OUT OF SCOPE (UNLESS AGREED SEPARATELY)
+--------------------------------------------------------------------------------
+
+• CMS, multilingual site, CRM/email backend for the contact form
+• Domain purchase, DNS, and production hosting (can be quoted as add-on)
+
+--------------------------------------------------------------------------------
+INVESTMENT
+--------------------------------------------------------------------------------
+
+Total:   [Amount + currency]
+Terms:   [e.g. 50% kickoff / 50% on delivery]
+
+--------------------------------------------------------------------------------
+ACCEPTANCE
+--------------------------------------------------------------------------------
+
+Sign-off on this proposal authorizes start of the one-week delivery window
+after kickoff meeting and receipt of deposit (if applicable).
+
+Contact: [Your email] | [Phone]
+
+================================================================================

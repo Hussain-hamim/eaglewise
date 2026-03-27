@@ -10,6 +10,7 @@ export default function MarketsPage() {
   return (
     <SiteShell>
       <Section
+        id="markets-overview"
         eyebrow="Markets & Distribution"
         title="Connecting suppliers, channels, and regional demand"
         description="Eaglewise operates across international sourcing, wholesale distribution, and digital marketplace sales."
@@ -49,6 +50,7 @@ export default function MarketsPage() {
       </Section>
 
       <Section
+        id="regional-network"
         title="Regional Network"
         description="Our business network supports reliable logistics, market coverage, and operational continuity."
       >
@@ -77,6 +79,7 @@ export default function MarketsPage() {
       </Section>
 
       <CtaStrip
+        id="markets-cta"
         title="Expand your distribution footprint"
         description="Work with Eaglewise to strengthen sourcing, market access, and channel execution."
         primaryLabel="Start Partnership Discussion"

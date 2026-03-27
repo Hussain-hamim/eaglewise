@@ -35,6 +35,7 @@ export default function FaqPage() {
   return (
     <SiteShell>
       <Section
+        id="faq-list"
         eyebrow="Frequently Asked Questions"
         title="Common questions from business partners"
         description="If you need details specific to your company, our team can provide a tailored response."
@@ -53,6 +54,7 @@ export default function FaqPage() {
       </Section>
 
       <CtaStrip
+        id="faq-cta"
         title="Have a specific question?"
         description="Speak with Eaglewise directly for a focused discussion on your target market and business goals."
         primaryLabel="Contact Us"

@@ -7,6 +7,7 @@ export default function ContactPage() {
   return (
     <SiteShell>
       <Section
+        id="contact-main"
         eyebrow="Contact"
         title="Let’s discuss your business goals"
         description="For inquiries, partnerships, and consultancy services, share your details and our team will get back to you."

@@ -23,6 +23,7 @@ export default function AboutPage() {
   return (
     <SiteShell>
       <Section
+        id="about-overview"
         eyebrow="About Eaglewise"
         title="A diversified UAE business model for modern markets"
         description="Eaglewise Business Consultancy LLC-FZ was established in March 2025 to connect international suppliers, regional distributors, and growth-focused businesses."
@@ -37,7 +38,7 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section title="Vision & Mission">
+      <Section id="vision-mission" title="Vision & Mission">
         <div className="grid gap-4 md:grid-cols-2">
           <article className="rounded-2xl border border-border bg-surface p-6">
             <div className="mb-3 flex items-center gap-3">
@@ -65,7 +66,7 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section title="CEO Message">
+      <Section id="ceo-message" title="CEO Message">
         <article className="rounded-2xl border border-border bg-surface p-6 md:p-8">
           <p className="text-base leading-8 text-muted-foreground">
             At Eaglewise Business Consultancy LLC-FZ, our vision is to create a company
@@ -81,7 +82,7 @@ export default function AboutPage() {
         </article>
       </Section>
 
-      <Section title="Company Values">
+      <Section id="company-values" title="Company Values">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {values.map(({ title, Icon }) => (
             <article key={title} className="rounded-2xl border border-border bg-surface p-5">
@@ -95,6 +96,7 @@ export default function AboutPage() {
       </Section>
 
       <CtaStrip
+        id="about-cta"
         title="Let us align strategy with execution"
         description="Partner with Eaglewise for disciplined operations, transparent processes, and scalable market growth."
         primaryLabel="Discuss Your Goals"

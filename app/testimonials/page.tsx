@@ -25,6 +25,7 @@ export default function TestimonialsPage() {
   return (
     <SiteShell>
       <Section
+        id="client-feedback"
         eyebrow="Client Feedback"
         title="Built on trust and long-term relationships"
         description="Sample testimonials are included in this version and can be replaced with verified client testimonials once approved."
@@ -42,7 +43,7 @@ export default function TestimonialsPage() {
         </div>
       </Section>
 
-      <Section title="Trusted by businesses in the UAE and beyond">
+      <Section id="trusted-metrics" title="Trusted by businesses in the UAE and beyond">
         <div className="grid gap-4 md:grid-cols-3">
           <article className="rounded-2xl border border-border bg-surface p-6">
             <h3 className="text-3xl font-semibold text-primary">2025</h3>
@@ -60,6 +61,7 @@ export default function TestimonialsPage() {
       </Section>
 
       <CtaStrip
+        id="testimonials-cta"
         title="Want your success story featured here?"
         description="Start working with us and we can build measurable outcomes for your business."
         primaryLabel="Contact Eaglewise"

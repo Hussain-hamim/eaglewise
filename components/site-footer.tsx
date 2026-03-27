@@ -1,26 +1,44 @@
 import Link from "next/link";
+import Image from "next/image";
+import { Globe, Mail, MapPin, Phone, ArrowUpRight } from "lucide-react";
 import { companyInfo, navLinks } from "@/lib/site";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-16 border-t border-border bg-secondary text-secondary-foreground">
-      <div className="container-shell grid gap-10 py-12 md:grid-cols-3">
-        <div>
-          <h3 className="text-lg font-semibold">{companyInfo.name}</h3>
-          <p className="mt-3 text-sm leading-6 text-secondary-foreground/80">
+    <footer className="mt-20 border-t border-border bg-secondary text-secondary-foreground">
+      <div className="container-shell grid gap-10 py-14 md:grid-cols-3">
+        <div className="md:pr-6">
+          <div className="inline-flex rounded-xl bg-white/95 px-3 py-2 shadow-sm ring-1 ring-black/5">
+            <Image
+              src="/ebc-logo.png"
+              alt="Eaglewise Business Consultancy"
+              width={1587}
+              height={414}
+              className="h-[50px] w-auto object-contain"
+            />
+          </div>
+          <p className="mt-5 text-sm leading-7 text-secondary-foreground/80">
             UAE-based company focused on general trading, e-commerce, and professional
             consultancy services.
           </p>
+          <Link
+            href="/contact"
+            className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#EB8B2E] transition hover:text-[#ff9e45]"
+          >
+            Start a conversation
+            <ArrowUpRight className="h-4 w-4" />
+          </Link>
         </div>
 
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-secondary-foreground/75">
             Navigation
           </h4>
-          <ul className="mt-4 space-y-2 text-sm text-secondary-foreground/90">
+          <ul className="mt-4 space-y-2.5 text-sm text-secondary-foreground/90">
             {navLinks.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="transition hover:text-primary">
+                <Link href={item.href} className="inline-flex items-center gap-2 transition hover:text-primary">
+                  <ArrowUpRight className="h-3.5 w-3.5 opacity-60" />
                   {item.label}
                 </Link>
               </li>
@@ -32,16 +50,28 @@ export function SiteFooter() {
           <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-secondary-foreground/75">
             Contact
           </h4>
-          <ul className="mt-4 space-y-2 text-sm text-secondary-foreground/90">
-            <li>Location: {companyInfo.location}</li>
-            <li>Phone: {companyInfo.phone}</li>
-            <li>Email: {companyInfo.email}</li>
-            <li>Address: {companyInfo.address}</li>
+          <ul className="mt-4 space-y-3 text-sm text-secondary-foreground/90">
+            <li className="flex items-center gap-3">
+              <Globe className="h-4 w-4 text-[#EB8B2E]" />
+              <span>Location: {companyInfo.location}</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <Phone className="h-4 w-4 text-[#EB8B2E]" />
+              <span>Phone: {companyInfo.phone}</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <Mail className="h-4 w-4 text-[#EB8B2E]" />
+              <span>Email: {companyInfo.email}</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <MapPin className="h-4 w-4 text-[#EB8B2E]" />
+              <span>Address: {companyInfo.address}</span>
+            </li>
           </ul>
         </div>
       </div>
-      <div className="border-t border-secondary-foreground/15 py-4">
-        <p className="container-shell text-xs text-secondary-foreground/70">
+      <div className="border-t border-secondary-foreground/15 py-5">
+        <p className="container-shell text-xs tracking-wide text-secondary-foreground/70">
           Copyright {new Date().getFullYear()} {companyInfo.name}. All rights reserved.
         </p>
       </div>
