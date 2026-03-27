@@ -188,16 +188,16 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-2">
           <Link
-            href="/contact"
+            href="/services"
             className="hidden rounded-full border border-border bg-surface px-5 py-2.5 text-sm font-semibold text-foreground transition hover:bg-surface-alt md:inline-flex"
           >
-            Log In
+            Our Services
           </Link>
           <Link
             href="/contact"
             className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:brightness-95"
           >
-            Sign Up
+            Contact Us
           </Link>
         </div>
       </div>

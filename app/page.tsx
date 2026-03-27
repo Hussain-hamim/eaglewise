@@ -137,14 +137,14 @@ export default function Home() {
                     href="/contact"
                     className="group relative inline-flex h-14 items-center justify-center gap-2 overflow-hidden rounded-full bg-[#EB8B2E] px-8 text-base font-semibold text-white transition-all hover:bg-[#d97a22]"
                   >
-                    <span>Sign up</span>
+                    <span>Contact Us</span>
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                   <Link
                     href="/services"
                     className="inline-flex h-14 items-center justify-center rounded-full border border-white/10 bg-white/10 px-8 text-base font-semibold !text-gray-300 backdrop-blur-md transition-all hover:bg-white/20 hover:!text-white"
                   >
-                    Try demo
+                    View Services
                   </Link>
                 </motion.div>
                 
@@ -208,6 +208,47 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-8 md:py-12">
+        <div className="container-shell">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeInUp}
+            className="grid items-center gap-6 rounded-[2rem] border border-border/60 bg-surface p-5 md:grid-cols-2 md:gap-8 md:p-8"
+          >
+            <div className="h-[250px] overflow-hidden rounded-[1.5rem] md:h-[310px]">
+              <Image
+                src="/uae-presence-regional.jpg"
+                alt="Business professional presence in UAE setting"
+                width={1600}
+                height={1067}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="px-1 md:px-2">
+              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#EB8B2E]">
+                UAE Presence
+              </p>
+              <h2 className="mt-3 text-2xl font-bold tracking-tight text-foreground md:text-4xl">
+                Built in the UAE for practical growth
+              </h2>
+              <p className="mt-4 max-w-xl text-base leading-7 text-muted-foreground">
+                Established in March 2025, Eaglewise combines general trading, e-commerce,
+                and consultancy into one execution-focused model for regional expansion.
+              </p>
+              <Link
+                href="/services"
+                className="mt-6 inline-flex items-center gap-2 text-base font-semibold text-foreground transition hover:text-[#EB8B2E]"
+              >
+                Explore services
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       <section className="py-8 md:py-14">
         <div className="container-shell">
           <motion.div
@@ -222,8 +263,8 @@ export default function Home() {
               className="group relative overflow-hidden rounded-[2rem] lg:col-span-7"
             >
               <Image
-                src="/home-office-team.jpg"
-                alt="Professional team meeting in modern office"
+                src="/professional-team.jpg"
+                alt="Professional business team discussion"
                 width={1600}
                 height={1000}
                 className="h-[320px] w-full object-cover transition duration-700 group-hover:scale-[1.03] md:h-[420px]"
@@ -265,8 +306,8 @@ export default function Home() {
               className="group relative overflow-hidden rounded-[2rem] lg:col-span-5"
             >
               <Image
-                src="/home-office-dubai.jpg"
-                alt="Dubai office collaboration team"
+                src="/professional-conference.jpg"
+                alt="Corporate boardroom planning session"
                 width={1600}
                 height={1000}
                 className="h-[280px] w-full object-cover transition duration-700 group-hover:scale-[1.03] md:h-[330px]"
