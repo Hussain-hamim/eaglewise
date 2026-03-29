@@ -1,19 +1,29 @@
 import { Section } from "@/components/section";
 import { SiteShell } from "@/components/site-shell";
+import { SubpageHero } from "@/components/subpage-hero";
 import { companyInfo } from "@/lib/site";
 import { Mail, MapPin, Phone, Globe, Send } from "lucide-react";
 
 export default function ProfessionalContactPage() {
   return (
     <SiteShell>
+      <SubpageHero
+        variant="professional"
+        imageSrc="/hero-dubai.jpg"
+        imageAlt="Dubai skyline — Eaglewise professional services"
+        eyebrow="Contact · Professional Services"
+        title="Start a conversation"
+        subtitle="Accounting, tax, audit, or advisory—share your context and we will respond with next steps."
+      />
       <Section
         id="contact-main"
-        eyebrow="Contact · Professional Services"
+        className="bg-white"
+        eyebrow="Inquiry"
         title="Consultancy and advisory inquiries"
         description="For accounting, tax, audit, and business advisory requests, share your details and our team will respond."
       >
-        <div className="grid gap-4 lg:grid-cols-2">
-          <article className="rounded-2xl border border-border bg-surface p-6 md:p-8">
+        <div className="grid gap-5 lg:grid-cols-2 lg:gap-8">
+          <article className="eagle-card p-6 md:p-8">
             <div className="flex items-center gap-3">
               <Send className="h-5 w-5 text-[#EB8B2E]" />
               <h3 className="text-xl font-semibold">Send inquiry</h3>
@@ -54,7 +64,7 @@ export default function ProfessionalContactPage() {
               </div>
               <button
                 type="button"
-                className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-95"
+                className="rounded-full bg-[#EB8B2E] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#d97a22]"
               >
                 Submit inquiry
               </button>
@@ -64,7 +74,7 @@ export default function ProfessionalContactPage() {
             </form>
           </article>
 
-          <article id="company-details" className="scroll-mt-36 rounded-2xl border border-border bg-surface p-6 md:p-8">
+          <article id="company-details" className="eagle-card scroll-mt-36 p-6 md:p-8">
             <h3 className="text-xl font-semibold">Company details</h3>
             <ul className="mt-5 space-y-3 text-sm leading-7 text-muted-foreground">
               <li>

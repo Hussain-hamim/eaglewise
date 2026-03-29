@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { CtaStrip } from "@/components/cta-strip";
 import { Section } from "@/components/section";
 import { SiteShell } from "@/components/site-shell";
+import { SubpageHero } from "@/components/subpage-hero";
 import { ArrowLeft, ArrowRight, Star } from "lucide-react";
 
 const testimonials = [
@@ -41,16 +42,24 @@ export default function ProfessionalTestimonialsPage() {
 
   return (
     <SiteShell>
-      <section id="client-feedback" className="bg-surface-alt py-14 md:py-20">
+      <SubpageHero
+        variant="professional"
+        imageSrc="/cta-executive-meeting.jpg"
+        imageAlt="Executive advisory discussion"
+        eyebrow="Testimonials"
+        title="Client voices"
+        subtitle="What partners and leadership teams say about working with Eaglewise on finance and advisory."
+      />
+      <section id="client-feedback" className="bg-gradient-to-b from-white to-neutral-50/90 py-14 md:py-20">
         <div className="container-shell">
           <div className="mx-auto mb-10 max-w-3xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#EB8B2E]">
+            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#EB8B2E] md:text-xs">
               Client feedback
             </p>
-            <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
+            <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-4xl">
               Advisory clients on working with Eaglewise
             </h2>
-            <p className="mt-4 text-base text-muted-foreground md:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
               Highlights from companies we have supported on finance and business advisory.
             </p>
           </div>
@@ -80,7 +89,7 @@ export default function ProfessionalTestimonialsPage() {
               {testimonials.map((item) => (
                 <article
                   key={item.author}
-                  className="min-w-[310px] snap-start rounded-3xl border border-border/60 bg-surface p-6 md:min-w-[360px]"
+                  className="eagle-card min-w-[310px] snap-start rounded-2xl p-6 md:min-w-[360px] md:p-7"
                 >
                   <div className="mb-4 flex items-center justify-between">
                     <div className="flex items-center gap-1">
@@ -103,18 +112,23 @@ export default function ProfessionalTestimonialsPage() {
         </div>
       </section>
 
-      <Section id="trusted-metrics" title="Trusted by businesses in the UAE and beyond">
-        <div className="grid gap-4 md:grid-cols-3">
-          <article className="rounded-2xl border border-border bg-surface p-6">
-            <h3 className="text-3xl font-semibold text-primary">Skylink &amp; Shanzer</h3>
+      <Section
+        id="trusted-metrics"
+        className="bg-white"
+        eyebrow="At a glance"
+        title="Trusted by businesses in the UAE and beyond"
+      >
+        <div className="grid gap-5 md:grid-cols-3 md:gap-6">
+          <article className="eagle-card p-6 md:p-7">
+            <h3 className="text-3xl font-bold text-[#EB8B2E]">Skylink &amp; Shanzer</h3>
             <p className="mt-2 text-sm text-muted-foreground">UAE companies supported with consultancy services</p>
           </article>
-          <article className="rounded-2xl border border-border bg-surface p-6">
-            <h3 className="text-3xl font-semibold text-primary">10+ Lines</h3>
+          <article className="eagle-card p-6 md:p-7">
+            <h3 className="text-3xl font-bold text-[#EB8B2E]">10+ Lines</h3>
             <p className="mt-2 text-sm text-muted-foreground">Professional advisory and compliance capabilities</p>
           </article>
-          <article className="rounded-2xl border border-border bg-surface p-6">
-            <h3 className="text-3xl font-semibold text-primary">2025</h3>
+          <article className="eagle-card p-6 md:p-7">
+            <h3 className="text-3xl font-bold text-[#EB8B2E]">2025</h3>
             <p className="mt-2 text-sm text-muted-foreground">UAE establishment with a consultancy-first model</p>
           </article>
         </div>

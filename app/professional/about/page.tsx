@@ -1,6 +1,7 @@
 import { CtaStrip } from "@/components/cta-strip";
 import { Section } from "@/components/section";
 import { SiteShell } from "@/components/site-shell";
+import { SubpageHero } from "@/components/subpage-hero";
 import { ShieldCheck, Trophy, Handshake, Lightbulb, Users, Compass, ClipboardList } from "lucide-react";
 
 const values = [
@@ -22,13 +23,22 @@ const missionPoints = [
 export default function ProfessionalAboutPage() {
   return (
     <SiteShell>
+      <SubpageHero
+        variant="professional"
+        imageSrc="/professional-team.jpg"
+        imageAlt="Professional team collaboration in the UAE"
+        eyebrow="About · Professional Services"
+        title="Who we are"
+        subtitle="A UAE consultancy focused on clarity, compliance, and execution—not generic advice."
+      />
       <Section
         id="about-overview"
-        eyebrow="About · Professional Services"
+        className="bg-white"
+        eyebrow="Overview"
         title="A UAE consultancy focused on clarity and execution"
         description="Eaglewise Business Consultancy LLC-FZ was established in March 2025 to provide professional services to businesses in the UAE and international markets."
       >
-        <div className="rounded-3xl border border-border bg-surface p-7 md:p-10">
+        <div className="eagle-card rounded-3xl p-7 md:p-10">
           <p className="text-base leading-8 text-muted-foreground">
             In this professional services experience, we emphasize accounting, audit, tax, investment
             planning, marketing and corporate communication advisory, project management, and business
@@ -37,9 +47,9 @@ export default function ProfessionalAboutPage() {
         </div>
       </Section>
 
-      <Section id="vision-mission" title="Vision & Mission">
-        <div className="grid gap-4 md:grid-cols-2">
-          <article className="rounded-2xl border border-border bg-surface p-6">
+      <Section id="vision-mission" className="bg-neutral-50/80" title="Vision & Mission">
+        <div className="grid gap-5 md:grid-cols-2 md:gap-6">
+          <article className="eagle-card p-6 md:p-7">
             <div className="mb-3 flex items-center gap-3">
               <Compass className="h-5 w-5 text-[#EB8B2E]" />
               <h3 className="text-2xl font-semibold">Vision</h3>
@@ -50,7 +60,7 @@ export default function ProfessionalAboutPage() {
             </p>
           </article>
 
-          <article className="rounded-2xl border border-border bg-surface p-6">
+          <article className="eagle-card p-6 md:p-7">
             <div className="mb-3 flex items-center gap-3">
               <ClipboardList className="h-5 w-5 text-[#EB8B2E]" />
               <h3 className="text-2xl font-semibold">Mission</h3>
@@ -64,8 +74,8 @@ export default function ProfessionalAboutPage() {
         </div>
       </Section>
 
-      <Section id="ceo-message" title="CEO Message">
-        <article className="rounded-2xl border border-border bg-surface p-6 md:p-8">
+      <Section id="ceo-message" className="bg-white" title="CEO Message">
+        <article className="eagle-card p-6 md:p-8">
           <p className="text-base leading-8 text-muted-foreground">
             At Eaglewise Business Consultancy LLC-FZ, our vision is to create a company that delivers
             professional business services while building strong and lasting partnerships across
@@ -79,10 +89,10 @@ export default function ProfessionalAboutPage() {
         </article>
       </Section>
 
-      <Section id="company-values" title="Company Values">
+      <Section id="company-values" className="bg-neutral-50/80" title="Company Values">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {values.map(({ title, Icon }) => (
-            <article key={title} className="rounded-2xl border border-border bg-surface p-5">
+            <article key={title} className="eagle-card p-5 md:p-6">
               <div className="flex items-center gap-3">
                 <Icon className="h-5 w-5 text-[#EB8B2E]" />
                 <h3 className="text-lg font-semibold">{title}</h3>

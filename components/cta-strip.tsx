@@ -36,21 +36,20 @@ export function CtaStrip({
       <div className={fullWidth ? "" : "container-shell"}>
         <div
           className={`relative overflow-hidden border border-[#EB8B2E]/25 bg-secondary text-secondary-foreground ${radiusClass} ${
-            imageSrc
-              ? "grid gap-0 md:min-h-[470px] md:grid-cols-12"
-              : "px-6 py-10 md:px-10 md:py-12"
+            imageSrc ? "grid gap-0 md:min-h-[min(520px,56vh)] md:grid-cols-12" : "px-6 py-10 md:px-10 md:py-12"
           }`}
         >
           <div className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-[#EB8B2E]/15 blur-3xl" />
           <div className="pointer-events-none absolute -left-10 -bottom-16 h-48 w-48 rounded-full bg-white/5 blur-3xl" />
 
           {imageSrc ? (
-            <div className="relative min-h-[300px] md:col-span-7 md:min-h-[470px]">
+            <div className="relative aspect-[5/4] min-h-[280px] w-full md:col-span-7 md:aspect-auto md:min-h-[min(100%,520px)] md:h-full">
               <Image
                 src={imageSrc}
                 alt={imageAlt}
                 fill
-                className="object-cover"
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 58vw"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-secondary/50 via-secondary/20 to-transparent md:hidden" />
             </div>

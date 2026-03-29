@@ -58,3 +58,11 @@ a {
   border-radius: 1rem;
   box-shadow: 0 8px 24px rgba(7, 13, 26, 0.06);
 }
+
+/* Inner pages — match landing card weight */
+.eagle-card {
+  border: 1px solid rgb(226 232 240 / 0.95);
+  background: var(--surface);
+  border-radius: 1rem;
+  box-shadow: 0 12px 40px rgba(7, 13, 26, 0.05);
+}

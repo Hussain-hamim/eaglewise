@@ -1,6 +1,7 @@
 import { CtaStrip } from "@/components/cta-strip";
 import { Section } from "@/components/section";
 import { SiteShell } from "@/components/site-shell";
+import { SubpageHero } from "@/components/subpage-hero";
 import { HelpCircle } from "lucide-react";
 
 const faqs = [
@@ -34,15 +35,24 @@ const faqs = [
 export default function ProfessionalFaqPage() {
   return (
     <SiteShell>
+      <SubpageHero
+        variant="professional"
+        imageSrc="/home-office-dubai.jpg"
+        imageAlt="Professional workspace in Dubai"
+        eyebrow="FAQ · Professional Services"
+        title="Answers before you reach out"
+        subtitle="Quick clarity on how we work, who we serve, and how engagements are structured."
+      />
       <Section
         id="faq-list"
-        eyebrow="FAQ · Professional Services"
+        className="bg-white"
+        eyebrow="Topics"
         title="Common questions about our advisory work"
         description="If you need detail specific to your company, we can respond with a tailored outline."
       >
-        <div className="space-y-4">
+        <div className="space-y-4 md:space-y-5">
           {faqs.map((item) => (
-            <article key={item.question} className="rounded-2xl border border-border bg-surface p-6">
+            <article key={item.question} className="eagle-card p-6 md:p-7">
               <div className="flex items-center gap-3">
                 <HelpCircle className="h-5 w-5 text-[#EB8B2E]" />
                 <h3 className="text-lg font-semibold">{item.question}</h3>
