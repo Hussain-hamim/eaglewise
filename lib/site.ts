@@ -2,15 +2,16 @@ export type SiteMode = "professional" | "trading";
 
 export const companyInfo = {
   name: "Eaglewise Business Consultancy LLC-FZ",
-  location: "United Arab Emirates",
+  /** Matches LinkedIn company headline (city / country). */
+  location: "Dubai, United Arab Emirates",
   established: "March 2025",
   /** Display format */
   phone: "+971 555 953 221",
   /** Use in tel: links (no spaces) */
   phoneTel: "+971555953221",
   email: "ceo@eaglewisebiz.com",
-  /** Full postal / office line — client to confirm */
-  address: "To be updated",
+  /** Primary location on LinkedIn: Meydan Free Zone (no street/building listed there). */
+  address: "Meydan Free Zone, Dubai, United Arab Emirates",
   website: "https://www.eaglewisebiz.com",
   linkedin: "https://www.linkedin.com/company/eagle-wise-business-consultancy-uae/",
 } as const;

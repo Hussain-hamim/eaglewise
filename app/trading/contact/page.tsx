@@ -1,3 +1,4 @@
+import { ContactForm } from "@/components/contact-form";
 import { Section } from "@/components/section";
 import { SiteShell } from "@/components/site-shell";
 import { SubpageHero } from "@/components/subpage-hero";
@@ -31,50 +32,7 @@ export default function TradingContactPage() {
                 <Send className="h-5 w-5 text-[#EB8B2E]" />
                 <h3 className="text-xl font-bold tracking-tight">Send inquiry</h3>
               </div>
-              <form className="mt-5 space-y-4">
-                <div>
-                  <label htmlFor="trade-name" className="mb-2 block text-sm font-medium">
-                    Full Name
-                  </label>
-                  <input
-                    id="trade-name"
-                    type="text"
-                    placeholder="Your full name"
-                    className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm outline-none ring-[#EB8B2E] transition focus:ring-2"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="trade-email" className="mb-2 block text-sm font-medium">
-                    Email
-                  </label>
-                  <input
-                    id="trade-email"
-                    type="email"
-                    placeholder="your@email.com"
-                    className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm outline-none ring-[#EB8B2E] transition focus:ring-2"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="trade-message" className="mb-2 block text-sm font-medium">
-                    Message
-                  </label>
-                  <textarea
-                    id="trade-message"
-                    rows={5}
-                    placeholder="Describe your partnership, sourcing, or distribution requirement"
-                    className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm outline-none ring-[#EB8B2E] transition focus:ring-2"
-                  />
-                </div>
-                <button
-                  type="button"
-                  className="rounded-full bg-[#EB8B2E] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#d97a22]"
-                >
-                  Submit inquiry
-                </button>
-                <p className="text-xs text-muted-foreground">
-                  Form submission backend can be connected in the next phase.
-                </p>
-              </form>
+              <ContactForm formType="trading" />
             </article>
 
             <article id="company-details" className="eagle-card scroll-mt-36 p-6 md:p-8">
@@ -173,9 +131,6 @@ export default function TradingContactPage() {
                   </div>
                 </li>
               </ul>
-              <p className="mt-4 rounded-xl bg-neutral-50 p-4 text-xs text-muted-foreground">
-                Full office address will be added when confirmed.
-              </p>
             </article>
           </div>
         </Section>
