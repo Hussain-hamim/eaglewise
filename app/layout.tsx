@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   title: "Eaglewise Business Consultancy LLC-FZ",
   description:
     "UAE-based business consultancy, general trading, and e-commerce company connecting international suppliers with regional markets.",
+  icons: {
+    apple: [{ url: "/ebc-mark.png", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
