@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import ProfessionalHomePage from "@/components/professional-home-page";
 
 export default function Home() {
-  redirect("/professional");
+  return <ProfessionalHomePage />;
 }

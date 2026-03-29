@@ -10,8 +10,8 @@ export const companyInfo = {
   /** Use in tel: links (no spaces) */
   phoneTel: "+971555953221",
   email: "ceo@eaglewisebiz.com",
-  /** Primary location on LinkedIn: Meydan Free Zone (no street/building listed there). */
-  address: "Meydan Free Zone, Dubai, United Arab Emirates",
+  /** Registered address (UAE business license). */
+  address: "Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai, U.A.E.",
   website: "https://www.eaglewisebiz.com",
   linkedin: "https://www.linkedin.com/company/eagle-wise-business-consultancy-uae/",
 } as const;
@@ -27,8 +27,8 @@ export const modeConfig = {
     /** Top utility bar: uppercased in UI via ModeSwitcher */
     tabLabel: "professional services",
     switcherShortLabel: "professional services",
-    basePath: "/professional",
-    homeHref: "/professional",
+    basePath: "/",
+    homeHref: "/",
     navLinks: [
       { href: "/professional/about", label: "About" },
       { href: "/professional/services", label: "Services" },

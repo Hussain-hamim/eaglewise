@@ -138,9 +138,9 @@ export function SiteHeader() {
           </Link>
           <Link
             href={cfg.primaryCta.href}
-            className="rounded-full bg-primary px-3 py-2 text-xs font-semibold text-primary-foreground transition hover:brightness-95 sm:px-5 sm:py-2.5 sm:text-sm"
+            className="hidden rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:brightness-95 lg:inline-flex lg:items-center lg:justify-center"
           >
-            <span className="max-w-[9rem] truncate sm:max-w-none">{cfg.primaryCta.label}</span>
+            {cfg.primaryCta.label}
           </Link>
           <button
             type="button"
