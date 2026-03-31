@@ -4,7 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, type Variants } from "framer-motion";
 import { SiteShell } from "@/components/site-shell";
-import { ArrowRight, Award, Building2, Handshake, Star, TrendingUp } from "lucide-react";
+import {
+  ArrowRight,
+  Award,
+  Building2,
+  Handshake,
+  Star,
+  TrendingUp,
+} from "lucide-react";
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 24 },
@@ -23,9 +30,10 @@ const models = [
       "Import, export, and distribution of consumer goods from reputable UAE suppliers—Beauty Vision (Kera Look), My Perfume, and Efolia—with export routes into regional markets.",
     href: "/trading/products",
     cta: "Learn more",
-    image: "/trading/split-team.jpg",
+    image: "/trading/1.jpg",
     imageAlt: "Business professionals collaborating on partnership",
-    imageRounded: "rounded-2xl rounded-bl-[3rem] md:rounded-3xl md:rounded-bl-[4rem]",
+    imageRounded:
+      "rounded-2xl rounded-bl-[3rem] md:rounded-3xl md:rounded-bl-[4rem]",
     reverse: false,
   },
   {
@@ -34,9 +42,10 @@ const models = [
       "Khan Naseri Trading Company manages wholesale distribution across all 34 provinces of Afghanistan—efficient supply, logistics coordination, and market coverage.",
     href: "/trading/partners",
     cta: "Partner overview",
-    image: "/trading/split-logistics.jpg",
+    image: "/trading/7.jpg",
     imageAlt: "Warehouse and supply chain operations",
-    imageRounded: "rounded-2xl rounded-br-[3rem] md:rounded-3xl md:rounded-br-[4rem]",
+    imageRounded:
+      "rounded-2xl rounded-br-[3rem] md:rounded-3xl md:rounded-br-[4rem]",
     reverse: true,
   },
   {
@@ -45,9 +54,10 @@ const models = [
       "Amazon, Noon, and Shopify—wholesale and retail listings, private brand development, and a stronger digital presence focused on availability and customer satisfaction.",
     href: "/trading/markets",
     cta: "Explore channels",
-    image: "/trading/split-ecommerce.jpg",
+    image: "/trading/4.jpg",
     imageAlt: "Digital commerce and online retail",
-    imageRounded: "rounded-2xl rounded-tl-[3rem] md:rounded-3xl md:rounded-tl-[4rem]",
+    imageRounded:
+      "rounded-2xl rounded-tl-[3rem] md:rounded-3xl md:rounded-tl-[4rem]",
     reverse: false,
   },
 ];
@@ -55,21 +65,26 @@ const models = [
 const partnerHighlights = [
   {
     title: "Established",
-    description: "March 2025 — UAE-registered operations with clear governance and supplier relationships.",
+    description:
+      "March 2025 — UAE-registered operations with clear governance and supplier relationships.",
     image: "/trading/partner-highlight-established.jpg",
     imageAlt: "Urban skyline representing an established trading presence",
   },
   {
     title: "Reach",
-    description: "34 provinces via Khan Naseri Trading Company — coordinated wholesale distribution across Afghanistan.",
+    description:
+      "34 provinces via Khan Naseri Trading Company — coordinated wholesale distribution across Afghanistan.",
     image: "/trading/partner-highlight-reach.jpg",
-    imageAlt: "Air travel view suggesting regional and cross-border distribution reach",
+    imageAlt:
+      "Air travel view suggesting regional and cross-border distribution reach",
   },
   {
     title: "Channels",
-    description: "Amazon · Noon · Shopify — marketplace listings and e-commerce built for scale.",
+    description:
+      "Amazon · Noon · Shopify — marketplace listings and e-commerce built for scale.",
     image: "/trading/partner-highlight-channels.jpg",
-    imageAlt: "Laptop with business analytics representing digital marketplace channels",
+    imageAlt:
+      "Laptop with business analytics representing digital marketplace channels",
   },
 ];
 
@@ -122,66 +137,68 @@ export default function TradingHomePage() {
         {/* Hero — Capital partners style: full-bleed image, overlay, rounded bottom */}
         <section className="relative w-full pb-0 pt-0">
           <div className="relative h-[min(78vh,640px)] w-full min-w-0 overflow-hidden rounded-b-[2rem] md:h-[min(82vh,720px)] md:rounded-b-[3rem]">
-              <Image
-                src="/trading/hero-handshake-style.jpg"
-                alt="Business partners shaking hands in a professional setting"
-                fill
-                className="object-cover object-[center_30%] sm:object-[center_20%]"
-                priority
-                sizes="100vw"
-              />
-              {/* Same left-to-right scrim as Professional tab for readable hero copy */}
-              <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 via-secondary/80 to-transparent" />
-              {/* Extra bottom weight on small screens where copy is centered lower */}
-              <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/35 to-transparent md:hidden" />
-              <div className="absolute inset-0 flex items-end md:items-center">
-                <div className="container-shell w-full pb-16 pt-28 md:pb-20 md:pt-24">
-                  <motion.div
-                    initial="hidden"
-                    animate="visible"
-                    variants={stagger}
-                    className="max-w-xl text-center md:text-left"
+            <Image
+              src="/trading/6.jpg"
+              alt="Business partners shaking hands in a professional setting"
+              fill
+              className="object-cover object-[center_30%] sm:object-[center_20%]"
+              priority
+              sizes="100vw"
+            />
+            {/* Same left-to-right scrim as Professional tab for readable hero copy */}
+            <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 via-secondary/80 to-transparent" />
+            {/* Extra bottom weight on small screens where copy is centered lower */}
+            <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/35 to-transparent md:hidden" />
+            <div className="absolute inset-0 flex items-end md:items-center">
+              <div className="container-shell w-full pb-16 pt-28 md:pb-20 md:pt-24">
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  variants={stagger}
+                  className="max-w-xl text-center md:text-left"
+                >
+                  <motion.p
+                    variants={fadeInUp}
+                    className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#EB8B2E]"
                   >
-                    <motion.p
-                      variants={fadeInUp}
-                      className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#EB8B2E]"
+                    Trading &amp; Partners
+                  </motion.p>
+                  <motion.h1
+                    variants={fadeInUp}
+                    className="mt-4 text-3xl font-bold leading-[1.12] tracking-tight text-white md:text-5xl lg:text-[3.25rem]"
+                  >
+                    Partnership programmes: grow with a UAE trading partner
+                  </motion.h1>
+                  <motion.p
+                    variants={fadeInUp}
+                    className="mt-5 text-base leading-relaxed text-white/85 md:text-lg"
+                  >
+                    Connect suppliers, marketplaces, and regional
+                    distribution—with agreements tailored to sourcing,
+                    logistics, and e-commerce growth across the Middle East and
+                    Central Asia.
+                  </motion.p>
+                  <motion.div
+                    variants={fadeInUp}
+                    className="mt-8 flex flex-wrap items-center justify-center gap-3 md:justify-start"
+                  >
+                    <Link
+                      href="/trading/contact"
+                      className="inline-flex items-center justify-center rounded-full bg-[#EB8B2E] px-8 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#d97a22]"
                     >
-                      Trading &amp; Partners
-                    </motion.p>
-                    <motion.h1
-                      variants={fadeInUp}
-                      className="mt-4 text-3xl font-bold leading-[1.12] tracking-tight text-white md:text-5xl lg:text-[3.25rem]"
+                      Partner with us
+                    </Link>
+                    <Link
+                      href="/trading/markets"
+                      className="inline-flex items-center justify-center rounded-full border border-white bg-white px-8 py-3.5 text-sm font-semibold text-[#070d1a] shadow-sm transition hover:bg-white/95 hover:text-[#070d1a]"
                     >
-                      Partnership programmes: grow with a UAE trading partner
-                    </motion.h1>
-                    <motion.p
-                      variants={fadeInUp}
-                      className="mt-5 text-base leading-relaxed text-white/85 md:text-lg"
-                    >
-                      Connect suppliers, marketplaces, and regional distribution—with agreements tailored to
-                      sourcing, logistics, and e-commerce growth across the Middle East and Central Asia.
-                    </motion.p>
-                    <motion.div
-                      variants={fadeInUp}
-                      className="mt-8 flex flex-wrap items-center justify-center gap-3 md:justify-start"
-                    >
-                      <Link
-                        href="/trading/contact"
-                        className="inline-flex items-center justify-center rounded-full bg-[#EB8B2E] px-8 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#d97a22]"
-                      >
-                        Partner with us
-                      </Link>
-                      <Link
-                        href="/trading/markets"
-                        className="inline-flex items-center justify-center rounded-full border border-white bg-white px-8 py-3.5 text-sm font-semibold text-[#070d1a] shadow-sm transition hover:bg-white/95 hover:text-[#070d1a]"
-                      >
-                        View markets
-                      </Link>
-                    </motion.div>
+                      View markets
+                    </Link>
                   </motion.div>
-                </div>
+                </motion.div>
               </div>
             </div>
+          </div>
 
           <motion.div
             variants={fadeInUp}
@@ -212,8 +229,9 @@ export default function TradingHomePage() {
               Our trading &amp; partnership models
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-              Get a practical partnership structure leveraging our supplier relationships, marketplace presence,
-              and distribution network—aligned to your categories and regions.
+              Get a practical partnership structure leveraging our supplier
+              relationships, marketplace presence, and distribution
+              network—aligned to your categories and regions.
             </p>
           </motion.div>
         </section>
@@ -234,7 +252,9 @@ export default function TradingHomePage() {
                   className={block.reverse ? "md:order-2" : "md:order-1"}
                 >
                   <div className="mb-5 h-px w-10 bg-foreground" aria-hidden />
-                  <h3 className="text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl">{block.title}</h3>
+                  <h3 className="text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl">
+                    {block.title}
+                  </h3>
                   <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
                     {block.description}
                   </p>
@@ -281,8 +301,9 @@ export default function TradingHomePage() {
                 Why partners work with Eaglewise
               </h2>
               <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-                A concise snapshot of how we are set up—registration, regional distribution, and the channels we
-                operate on—so you can align quickly with our trading network.
+                A concise snapshot of how we are set up—registration, regional
+                distribution, and the channels we operate on—so you can align
+                quickly with our trading network.
               </p>
             </motion.div>
             <div className="mt-12 grid gap-10 md:mt-14 md:grid-cols-3 md:gap-8 lg:gap-10">
@@ -304,8 +325,12 @@ export default function TradingHomePage() {
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
-                  <h3 className="mt-5 text-lg font-bold tracking-tight text-foreground md:text-xl">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">{item.description}</p>
+                  <h3 className="mt-5 text-lg font-bold tracking-tight text-foreground md:text-xl">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">
+                    {item.description}
+                  </p>
                 </motion.article>
               ))}
             </div>
@@ -330,13 +355,16 @@ export default function TradingHomePage() {
               variants={fadeInUp}
               className="mx-auto max-w-2xl text-center"
             >
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#EB8B2E]">Partnership standards</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#EB8B2E]">
+                Partnership standards
+              </p>
               <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
                 What partners can expect
               </h2>
               <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-                Straightforward collaboration built on the same values as our company profile: integrity, quality,
-                and long-term relationships.
+                Straightforward collaboration built on the same values as our
+                company profile: integrity, quality, and long-term
+                relationships.
               </p>
             </motion.div>
             <div className="mt-12 grid gap-6 md:mt-14 md:grid-cols-3 md:gap-8">
@@ -352,9 +380,15 @@ export default function TradingHomePage() {
                     className="group relative rounded-2xl border border-neutral-200/90 bg-white/90 p-6 shadow-[0_12px_40px_rgba(7,13,26,0.05)] backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-[#EB8B2E]/30 hover:shadow-[0_20px_55px_rgba(7,13,26,0.09)] md:p-7"
                   >
                     <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#EB8B2E]/18 to-[#EB8B2E]/5 text-[#EB8B2E] ring-1 ring-[#EB8B2E]/15 transition group-hover:from-[#EB8B2E]/25 group-hover:to-[#EB8B2E]/8">
-                      <Icon className="h-6 w-6" strokeWidth={1.65} aria-hidden />
+                      <Icon
+                        className="h-6 w-6"
+                        strokeWidth={1.65}
+                        aria-hidden
+                      />
                     </div>
-                    <h3 className="mt-5 text-lg font-bold tracking-tight text-foreground">{item.title}</h3>
+                    <h3 className="mt-5 text-lg font-bold tracking-tight text-foreground">
+                      {item.title}
+                    </h3>
                     <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground md:text-[0.9375rem]">
                       {item.description}
                     </p>
@@ -369,8 +403,12 @@ export default function TradingHomePage() {
         <section className="border-t border-neutral-100 bg-white py-16 md:py-20">
           <div className="container-shell">
             <div className="mx-auto max-w-2xl text-center">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#EB8B2E]">Partner feedback</p>
-              <h2 className="mt-3 text-2xl font-bold tracking-tight md:text-4xl">Hear from trading partners</h2>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#EB8B2E]">
+                Partner feedback
+              </p>
+              <h2 className="mt-3 text-2xl font-bold tracking-tight md:text-4xl">
+                Hear from trading partners
+              </h2>
             </div>
             <div className="mt-12 grid gap-6 md:grid-cols-3">
               {landingTestimonials.map((item) => (
@@ -380,12 +418,19 @@ export default function TradingHomePage() {
                 >
                   <div className="flex items-center gap-1">
                     {Array.from({ length: 5 }).map((_, i) => (
-                      <Star key={i} className="h-3.5 w-3.5 fill-[#EB8B2E] text-[#EB8B2E]" />
+                      <Star
+                        key={i}
+                        className="h-3.5 w-3.5 fill-[#EB8B2E] text-[#EB8B2E]"
+                      />
                     ))}
                   </div>
                   <p className="mt-4 text-sm font-semibold">{item.author}</p>
-                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{item.quote}</p>
-                  <p className="mt-6 text-xs font-medium text-neutral-400">{item.date}</p>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                    {item.quote}
+                  </p>
+                  <p className="mt-6 text-xs font-medium text-neutral-400">
+                    {item.date}
+                  </p>
                 </article>
               ))}
             </div>
@@ -405,11 +450,19 @@ export default function TradingHomePage() {
         <section className="border-t border-neutral-100 bg-white py-10">
           <div className="container-shell flex flex-col items-center justify-between gap-6 md:flex-row">
             <div className="text-center md:text-left">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#EB8B2E]">Eaglewise</p>
-              <p className="mt-1 text-sm text-muted-foreground">Registered UAE business · General trading &amp; e-commerce</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#EB8B2E]">
+                Eaglewise
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Registered UAE business · General trading &amp; e-commerce
+              </p>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/ebc-mark.png" alt="EBC monogram" className="h-12 w-auto object-contain opacity-90 md:h-14" />
+            <img
+              src="/ebc-mark.png"
+              alt="EBC monogram"
+              className="h-12 w-auto object-contain opacity-90 md:h-14"
+            />
           </div>
         </section>
 
@@ -432,8 +485,9 @@ export default function TradingHomePage() {
                   Ready to discuss sourcing or distribution?
                 </h3>
                 <p className="mt-4 text-muted-foreground">
-                  Share your product lines, volumes, and target markets. We will respond with a clear next step
-                  for partnership or supply discussions.
+                  Share your product lines, volumes, and target markets. We will
+                  respond with a clear next step for partnership or supply
+                  discussions.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-3">
                   <Link
