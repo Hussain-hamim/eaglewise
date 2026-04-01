@@ -6,29 +6,29 @@ import { HelpCircle } from "lucide-react";
 
 const faqs = [
   {
-    question: "What trading activities does Eaglewise focus on?",
+    question: "What does Eaglewise do under trading and e-commerce?",
     answer:
-      "We focus on general trading and wholesale distribution, plus e-commerce operations across Amazon, Noon, and Shopify for selected consumer categories.",
+      "Eaglewise Business Consultancy LLC-FZ operates in general trading—import, export, and wholesale distribution of consumer goods—and runs e-commerce on Amazon, Noon, and Shopify, with both wholesale and retail sales for selected products.",
   },
   {
-    question: "Which suppliers and product lines do you work with?",
+    question: "Which suppliers and product lines are referenced in your profile?",
     answer:
-      "We have sourced and traded products from suppliers including Beauty Vision (Kera Look cosmetics), My Perfume, and Efolia, exporting to Afghanistan through our distribution partner.",
+      "We have purchased and traded products from Beauty Vision (Kera Look cosmetics), My Perfume, and Efolia. Exports to Afghanistan are supported through Khan Naseri Trading Company.",
   },
   {
     question: "How does distribution work in Afghanistan?",
     answer:
-      "Khan Naseri Trading Company manages wholesale distribution across all 34 provinces, supporting logistics and market coverage.",
+      "Khan Naseri Trading Company manages wholesale distribution across all 34 provinces of Afghanistan, supporting logistics and nationwide coverage for exported goods.",
   },
   {
-    question: "Can Eaglewise support marketplace growth?",
+    question: "What is your e-commerce focus?",
     answer:
-      "Yes. We focus on expanding product availability online, developing private brands, and strengthening digital presence alongside wholesale routes.",
+      "We work to expand product availability online, develop private brands, strengthen digital presence, and improve customer satisfaction—alongside wholesale routes.",
   },
   {
     question: "How do we start a partnership discussion?",
     answer:
-      "Use the trading contact page with your company profile, categories, and target markets. Our team will respond with practical next steps.",
+      "Use the trading contact page with your company profile, product categories, and target markets. We will reply with clear next steps for sourcing or distribution discussions.",
   },
 ];
 
@@ -42,15 +42,15 @@ export default function TradingFaqPage() {
           imageAlt="Business partnership discussion"
           imagePositionClassName="object-[center_30%] sm:object-[center_25%]"
           eyebrow="FAQ · Trading & Partners"
-          title="Trading questions, answered"
-          subtitle="Suppliers, distribution, and marketplaces—quick context before you get in touch."
+          title="Trading & partnerships"
+          subtitle="Answers aligned with our corporate profile: sourcing, exports, marketplaces, and regional partners."
         />
         <Section
           id="faq-list"
           className="bg-white"
           eyebrow="Topics"
-          title="Common questions from suppliers and distributors"
-          description="Need something specific? Contact us and we will tailor the answer to your scenario."
+          title="Common questions"
+          description="For scenarios not covered here, contact us with specifics and we will respond directly."
         >
           <div className="space-y-4 md:space-y-5">
             {faqs.map((item) => (
@@ -67,11 +67,11 @@ export default function TradingFaqPage() {
 
         <CtaStrip
           id="faq-cta"
-          title="Still exploring fit?"
-          description="Tell us about your supply chain, volumes, or marketplace goals and we will guide you to the right conversation."
+          title="Talk to the trading team"
+          description="Share your supply chain, volumes, or marketplace goals and we will route you to the right conversation."
           primaryLabel="Contact us"
           primaryHref="/trading/contact"
-          secondaryLabel="Product catalogue"
+          secondaryLabel="Products & channels"
           secondaryHref="/trading/products"
           imageSrc="/trading/cta-partners.jpg"
           imageAlt="Business discussion"

@@ -39,11 +39,11 @@ const models = [
   {
     title: "Distribution network",
     description:
-      "Khan Naseri Trading Company manages wholesale distribution across all 34 provinces of Afghanistan—efficient supply, logistics coordination, and market coverage.",
-    href: "/trading/partners",
-    cta: "Partner overview",
-    image: "/trading/7.jpg",
-    imageAlt: "Warehouse and supply chain operations",
+      "Khan Naseri Trading Company manages wholesale distribution across all 34 provinces of Afghanistan—KERA LOOK, Efolia, My Perfume, Forvil, Herbal Bio Amla, and more. See the partner showcase for photos.",
+    href: "/trading/partners#khan-naseri-showcase",
+    cta: "Partner showcase",
+    image: "/khan-naseri-trading-co/1774289130721.jpeg",
+    imageAlt: "Khan Naseri Trading — KERA LOOK hair care distribution creative",
     imageRounded:
       "rounded-2xl rounded-br-[3rem] md:rounded-3xl md:rounded-br-[4rem]",
     reverse: true,
@@ -112,19 +112,19 @@ const partnerExpectItems = [
 const landingTestimonials = [
   {
     author: "Consumer Goods Partner",
-    date: "2026-02-25",
+    date: "Partner feedback",
     quote:
       "From product sourcing to market distribution guidance, Eaglewise provided reliable support at each stage.",
   },
   {
     author: "Regional Trading Client",
-    date: "2026-03-10",
+    date: "Client feedback",
     quote:
       "Clear communication and practical execution—we improved visibility across our trading operations.",
   },
   {
     author: "Channel Partner",
-    date: "2026-03-01",
+    date: "Marketplace feedback",
     quote:
       "Helpful as we scaled marketplace listings and aligned logistics with their partner network.",
   },
@@ -167,16 +167,14 @@ export default function TradingHomePage() {
                     variants={fadeInUp}
                     className="mt-4 text-3xl font-bold leading-[1.12] tracking-tight text-white md:text-5xl lg:text-[3.25rem]"
                   >
-                    Partnership programmes: grow with a UAE trading partner
+                    Trading and partnership operations from the UAE
                   </motion.h1>
                   <motion.p
                     variants={fadeInUp}
                     className="mt-5 text-base leading-relaxed text-white/85 md:text-lg"
                   >
-                    Connect suppliers, marketplaces, and regional
-                    distribution—with agreements tailored to sourcing,
-                    logistics, and e-commerce growth across the Middle East and
-                    Central Asia.
+                    We connect supplier sourcing, marketplace operations, and regional
+                    distribution across the Middle East and Central Asia.
                   </motion.p>
                   <motion.div
                     variants={fadeInUp}
@@ -229,9 +227,8 @@ export default function TradingHomePage() {
               Our trading &amp; partnership models
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-              Get a practical partnership structure leveraging our supplier
-              relationships, marketplace presence, and distribution
-              network—aligned to your categories and regions.
+              Our model combines general trading, e-commerce channels, and partner-led
+              distribution to move products from UAE supply to regional markets.
             </p>
           </motion.div>
         </section>

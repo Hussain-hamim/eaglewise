@@ -24,36 +24,36 @@ import {
 
 const pillars = [
   {
-    title: "Accounting & assurance",
-    desc: "Bookkeeping, financial statements, and internal audit aligned to your reporting needs.",
+    title: "Finance & assurance",
+    desc: "Preparation and auditing of financial accounts, bookkeeping, internal audit, and investment analysis as needed.",
     icon: Calculator,
   },
   {
     title: "Tax & compliance",
-    desc: "Practical tax advisory and compliance support for UAE and cross-border operations.",
+    desc: "Tax consultancy and compliance advisory for businesses operating in the UAE and internationally.",
     icon: Scale,
   },
   {
     title: "Advisory & growth",
-    desc: "Business advisory, project management, and development planning with clear execution.",
+    desc: "Business advisory, marketing and PR, corporate communication, project management, and business development.",
     icon: Handshake,
   },
 ];
 
 const highlights = [
   {
-    title: "UAE-based team",
-    desc: "Established March 2025 with a consultancy-first operating model.",
+    title: "UAE establishment",
+    desc: "Eaglewise Business Consultancy LLC-FZ, established March 2025 in the United Arab Emirates.",
     icon: ShieldCheck,
   },
   {
-    title: "Client references",
-    desc: "Experience supporting companies such as Skylink and Shanzer in the UAE.",
+    title: "UAE references",
+    desc: "Consultancy services provided to UAE companies including Skylink and Shanzer, per our corporate profile.",
     icon: TrendingUp,
   },
   {
     title: "Regional network",
-    desc: "Connected to Eaglewise Chartered Accountants Company in Afghanistan for continuity.",
+    desc: "Partner network including Eaglewise Chartered Accountants Company (Afghanistan) for cross-border continuity.",
     icon: BarChart3,
   },
 ];
@@ -61,21 +61,21 @@ const highlights = [
 const landingTestimonials = [
   {
     author: "UAE Consultancy Client",
-    date: "2026-03-01",
+    date: "Client feedback",
     quote:
-      "The team is practical, responsive, and clear in communication. Their advisory support has been valuable for planning.",
+      "The team is practical, responsive, and clear in communication. Their advisory support helped us align reporting with decision-making.",
   },
   {
     author: "Business Advisory Client",
-    date: "2026-02-19",
+    date: "Client feedback",
     quote:
-      "Communication has been clear and professional from day one. We saw stronger execution across our regional operations.",
+      "Communication was clear from day one, and the engagement remained focused on practical execution across teams.",
   },
   {
-    author: "Regional Trading Client",
-    date: "2026-03-10",
+    author: "Finance Leadership Team",
+    date: "Client feedback",
     quote:
-      "Eaglewise helped us streamline reporting and improve financial visibility within a short timeframe.",
+      "Eaglewise helped us improve financial visibility and structure our internal processes with clear checkpoints.",
   },
 ];
 
@@ -143,16 +143,16 @@ export default function ProfessionalHomePage() {
                   variants={fadeInUp}
                   className="text-[2.35rem] font-bold leading-[1.1] tracking-tight text-white md:text-6xl lg:text-[4rem]"
                 >
-                  Trusted advisory, <br />
-                  <span className="text-white/70">grounded in the UAE.</span>
+                  Professional consultancy, <br />
+                  <span className="text-white/70">UAE-based, internationally relevant.</span>
                 </motion.h1>
 
                 <motion.p
                   variants={fadeInUp}
                   className="mt-5 max-w-xl text-xl leading-relaxed text-white/80 md:mt-6 md:text-lg"
                 >
-                  Financial, tax, and business consultancy for companies that need clarity,
-                  compliance, and disciplined execution—not generic slides.
+                  Accounting, audit, tax, investment planning, marketing and communications advisory, project management,
+                  and business development—for companies in the UAE and international markets.
                 </motion.p>
 
                 <motion.div
@@ -221,10 +221,10 @@ export default function ProfessionalHomePage() {
                 <div className="flex items-center gap-2.5">
                   <Layers className="h-5 w-5 text-[#EB8B2E]" />
                   <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-muted-foreground">
-                    Service breadth
+                    Service lines
                   </p>
                 </div>
-                <p className="mt-2.5 text-2xl font-bold tracking-tight text-foreground md:text-3xl">10+ Advisory Lines</p>
+                <p className="mt-2.5 text-2xl font-bold tracking-tight text-foreground md:text-3xl">10+ professional services</p>
               </article>
               <article className="flex flex-col items-center pt-6 md:items-start md:px-8 md:py-0 md:last:pr-0">
                 <div className="flex items-center gap-2.5">
@@ -261,11 +261,11 @@ export default function ProfessionalHomePage() {
             <div className="px-1 md:px-2">
               <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#EB8B2E]">UAE presence</p>
               <h2 className="mt-3 text-2xl font-bold tracking-tight text-foreground md:text-4xl">
-                Built for compliant, practical advisory
+                Efficient solutions, financial transparency, sustainable growth
               </h2>
               <p className="mt-4 max-w-xl text-base leading-7 text-muted-foreground">
-                From bookkeeping to tax advisory and business development, Eaglewise focuses on
-                transparent processes and outcomes you can use in day-to-day decisions.
+                Our consultancy approach matches the corporate profile: practical services for UAE and international
+                businesses, with integrity and clear communication.
               </p>
               <Link
                 href="/professional/services"
@@ -317,10 +317,10 @@ export default function ProfessionalHomePage() {
               <div className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#EB8B2E]/12 text-[#EB8B2E]">
                 <FileText className="h-5 w-5" />
               </div>
-              <h3 className="text-2xl font-bold tracking-tight md:text-3xl">References you can verify</h3>
+              <h3 className="text-2xl font-bold tracking-tight md:text-3xl">Named UAE consultancy experience</h3>
               <p className="mt-4 text-base leading-8 text-muted-foreground">
-                We have supported companies in the UAE including Skylink and Shanzer, with an
-                approach centred on efficiency, transparency, and sustainable growth.
+                We have provided consultancy services to companies in the UAE including Skylink and Shanzer. Our focus is
+                efficient solutions, financial transparency, and sustainable growth.
               </p>
               <p className="mt-6 text-sm font-medium text-foreground/70">
                 For consultancy inquiries, use{" "}
@@ -351,10 +351,10 @@ export default function ProfessionalHomePage() {
               <div className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#EB8B2E]/12 text-[#EB8B2E]">
                 <Handshake className="h-5 w-5" />
               </div>
-              <h3 className="text-2xl font-bold tracking-tight md:text-3xl">Regional continuity</h3>
+              <h3 className="text-2xl font-bold tracking-tight md:text-3xl">Regional business network</h3>
               <p className="mt-4 text-base leading-8 text-muted-foreground">
-                Eaglewise Chartered Accountants Company (Afghanistan) complements our network for
-                professional service continuity where our clients operate across borders.
+                Eaglewise Chartered Accountants Company (Afghanistan) is part of the network that supports professional
+                services, wholesale distribution, and supply across markets where our clients operate.
               </p>
             </motion.article>
           </motion.div>
@@ -368,8 +368,8 @@ export default function ProfessionalHomePage() {
         <div className="relative z-10 pt-10">
           <Section
             eyebrow="Why work with us"
-            title="Consultancy built for decisions, not decks"
-            description="We combine technical depth with practical communication so leadership teams can move faster with confidence."
+            title="Professional services with a clear mandate"
+            description="Integrity, quality, partnership, innovation, and customer focus—applied to accounting, tax, audit, and advisory work."
           >
             <motion.div
               initial="hidden"
@@ -403,7 +403,7 @@ export default function ProfessionalHomePage() {
           <Section
             eyebrow="Core capabilities"
             title="How we support your business"
-            description="A focused set of professional service pillars covering finance, tax, and growth advisory."
+            description="Service pillars drawn from our full catalogue: finance and assurance, tax and compliance, and broader advisory."
           >
             <motion.div
               initial="hidden"
@@ -443,10 +443,10 @@ export default function ProfessionalHomePage() {
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#EB8B2E]">Testimonials</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
-              What clients say about our advisory work
+              Client feedback highlights
             </h2>
             <p className="mt-4 text-base text-muted-foreground md:text-lg">
-              Feedback from companies we have supported on finance and business advisory.
+              Illustrative feedback from advisory-style engagements; for references, see our testimonials page and corporate profile.
             </p>
           </div>
 
@@ -478,7 +478,7 @@ export default function ProfessionalHomePage() {
                   </div>
                   <p className="text-sm font-semibold text-foreground">{item.author}</p>
                   <p className="mt-3 text-base leading-7 text-muted-foreground">{item.quote}</p>
-                  <p className="mt-6 text-sm font-semibold text-foreground">Trustpilot</p>
+                  <p className="mt-6 text-sm font-semibold text-foreground">Advisory engagement</p>
                 </article>
               ))}
             </motion.div>
@@ -516,11 +516,11 @@ export default function ProfessionalHomePage() {
       </section>
 
       <CtaStrip
-        title="Ready for a structured consultancy conversation?"
-        description="Share your objectives and we will recommend a practical scope—whether you need accounting support, tax clarity, or broader advisory."
+        title="Request a consultancy conversation"
+        description="Share your business priorities. We will suggest a practical scope across accounting, tax, audit, or advisory services."
         primaryLabel="Request Consultation"
         primaryHref="/professional/contact"
-        secondaryLabel="Company profile"
+        secondaryLabel="About Eaglewise"
         secondaryHref="/professional/about"
         imageSrc="/cta-executive-meeting.jpg"
         imageAlt="Executive boardroom meeting"

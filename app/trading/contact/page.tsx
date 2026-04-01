@@ -16,15 +16,15 @@ export default function TradingContactPage() {
           imageAlt="Business partners shaking hands in a professional setting"
           imagePositionClassName="object-[center_30%] sm:object-[center_25%]"
           eyebrow="Contact · Trading & Partners"
-          title="Talk to the trading team"
-          subtitle="Partnership, sourcing, and distribution—share your context and we will reply with clear next steps."
+          title="Business inquiries & partnerships"
+          subtitle="For trading, sourcing, distribution, and marketplace discussions, contact us through the form or our official channels."
         />
         <Section
           id="contact-main"
           className="bg-white"
           eyebrow="Inquiry"
-          title="Trading, sourcing, and partnership inquiries"
-          description="For business inquiries, distribution partnerships, and product sourcing discussions, share your details and our team will respond."
+          title="Trading and partnership contact"
+          description="Share your company profile, product categories, volumes, and target markets. Our team will respond regarding fit and next steps."
         >
           <div className="grid gap-5 lg:grid-cols-2 lg:gap-8">
             <article className="eagle-card p-6 md:p-8">

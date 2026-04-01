@@ -39,7 +39,7 @@ export const modeConfig = {
     primaryCta: { label: "Request Consultation", href: "/professional/contact" },
     secondaryCta: { label: "Our Services", href: "/professional/services" },
     footerBlurb:
-      "UAE-based professional consultancy focused on accounting, audit, tax, and business advisory for companies in the UAE and beyond.",
+      "UAE-based professional consultancy delivering accounting, audit, tax, and business advisory services for UAE and international markets.",
     footerCtaLabel: "Start a conversation",
     footerCtaHref: "/professional/contact",
   },
@@ -51,16 +51,16 @@ export const modeConfig = {
     basePath: "/trading",
     homeHref: "/trading",
     navLinks: [
-      { href: "/trading/markets", label: "Markets" },
       { href: "/trading/products", label: "Products" },
+      { href: "/trading/markets", label: "Markets" },
       { href: "/trading/partners", label: "Partners" },
       { href: "/trading/faq", label: "FAQ" },
       { href: "/trading/contact", label: "Contact" },
     ] satisfies NavItem[],
     primaryCta: { label: "Partner With Us", href: "/trading/contact" },
-    secondaryCta: { label: "Explore Markets", href: "/trading/markets" },
+    secondaryCta: { label: "Explore Products", href: "/trading/products" },
     footerBlurb:
-      "UAE-based trading and e-commerce partner connecting suppliers with regional distribution and marketplace growth.",
+      "UAE-based trading and e-commerce operations connecting international suppliers with regional distribution and marketplace channels.",
     footerCtaLabel: "Discuss a partnership",
     footerCtaHref: "/trading/contact",
   },
@@ -72,17 +72,17 @@ export const navMenusByMode: Record<SiteMode, Record<string, NavMenuItem[]>> = {
       {
         href: "/professional/about#about-overview",
         label: "Company Overview",
-        description: "Who Eaglewise is in the consultancy context.",
+        description: "Eaglewise profile, establishment, and core activities.",
       },
       {
         href: "/professional/about#vision-mission",
         label: "Vision & Mission",
-        description: "Advisory direction and objectives.",
+        description: "Strategic direction and long-term company goals.",
       },
       {
         href: "/professional/about#ceo-message",
         label: "CEO Message",
-        description: "Leadership perspective on professional services.",
+        description: "Leadership vision for growth and partnerships.",
       },
       {
         href: "/professional/about#company-values",
@@ -94,12 +94,12 @@ export const navMenusByMode: Record<SiteMode, Record<string, NavMenuItem[]>> = {
       {
         href: "/professional/services#professional-services",
         label: "Service Catalogue",
-        description: "Financial, tax, and advisory capabilities.",
+        description: "Accounting, tax, audit, and advisory scopes.",
       },
       {
         href: "/professional/services#how-we-work",
         label: "How We Work",
-        description: "Discovery, planning, and ongoing support.",
+        description: "Structured delivery from scope to execution.",
       },
       {
         href: "/professional/services#request-consultation",
@@ -111,12 +111,12 @@ export const navMenusByMode: Record<SiteMode, Record<string, NavMenuItem[]>> = {
       {
         href: "/professional/testimonials#client-feedback",
         label: "Client Feedback",
-        description: "Reviews from advisory and consultancy clients.",
+        description: "Selected feedback from consultancy engagements.",
       },
       {
         href: "/professional/testimonials#trusted-metrics",
         label: "Trust Metrics",
-        description: "Credibility and reach highlights.",
+        description: "References and company background highlights.",
       },
       {
         href: "/professional/testimonials#testimonials-cta",
@@ -154,12 +154,12 @@ export const navMenusByMode: Record<SiteMode, Record<string, NavMenuItem[]>> = {
       {
         href: "/trading/markets#markets-overview",
         label: "Markets Overview",
-        description: "Trading, wholesale, and channel focus.",
+        description: "How Eaglewise connects supply and demand.",
       },
       {
         href: "/trading/markets#regional-network",
         label: "Regional Network",
-        description: "Distribution and logistics coverage.",
+        description: "UAE corridor and Afghanistan distribution reach.",
       },
       {
         href: "/trading/markets#markets-cta",
@@ -171,12 +171,12 @@ export const navMenusByMode: Record<SiteMode, Record<string, NavMenuItem[]>> = {
       {
         href: "/trading/products#supplier-lines",
         label: "Supplier Lines",
-        description: "Beauty, fragrance, and cosmetics partners.",
+        description: "Current sourced categories and supplier references.",
       },
       {
         href: "/trading/products#ecommerce-channels",
         label: "E-Commerce Channels",
-        description: "Amazon, Noon, Shopify presence.",
+        description: "Amazon, Noon, and Shopify operations.",
       },
       {
         href: "/trading/products#products-cta",
@@ -188,12 +188,17 @@ export const navMenusByMode: Record<SiteMode, Record<string, NavMenuItem[]>> = {
       {
         href: "/trading/partners#partner-overview",
         label: "Partner Model",
-        description: "How we collaborate with distributors.",
+        description: "How we work with suppliers and distributors.",
       },
       {
         href: "/trading/partners#key-partners",
         label: "Key Partners",
-        description: "Khan Naseri Trading and network reach.",
+        description: "Khan Naseri Trading, Eaglewise CA, and in-market showcase.",
+      },
+      {
+        href: "/trading/partners#khan-naseri-showcase",
+        label: "Khan Naseri Showcase",
+        description: "Photos and brands from the Afghanistan distribution partner.",
       },
       {
         href: "/trading/partners#partners-cta",

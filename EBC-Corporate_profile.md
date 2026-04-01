@@ -97,3 +97,7 @@ Email:
 Addresses:
 Web:
 
+//////////////////
+
+If you want a Phase 3, the next step is to either (a) paste 3–5 LinkedIn post snippets you care about so we can mirror tone, or (b) replace the remaining illustrative trading/pro testimonial lines with real quotes + permission so every line is legally safe.
+

@@ -8,27 +8,27 @@ const faqs = [
   {
     question: "Which professional services does Eaglewise provide?",
     answer:
-      "We provide preparation and auditing of financial accounts, accounting and bookkeeping, internal audit, tax consultancy, investment analysis, marketing and PR consultancy, corporate communication, business advisory, project management, and business development consultancy.",
+      "Our services include preparation and auditing of financial accounts, accounting and bookkeeping, internal audit, tax consultancy and compliance advisory, investment analysis and financial planning, marketing and public relations consultancy, corporate communication consultancy, business advisory services, project management, and business development consultancy.",
   },
   {
-    question: "Do you work with UAE companies only?",
+    question: "Do you work only with UAE companies?",
     answer:
-      "Our consultancy engagements are structured for businesses operating in the UAE and international markets, depending on scope and regulatory context.",
+      "We provide services to businesses operating in the UAE and international markets. Scope depends on your needs and applicable regulations.",
   },
   {
-    question: "Can you support both compliance and growth advisory?",
+    question: "Have you worked with named UAE clients?",
     answer:
-      "Yes. Many clients combine finance and tax compliance support with business advisory and project management for clearer execution.",
+      "Yes. Our corporate profile references consultancy support provided to companies in the UAE including Skylink and Shanzer.",
   },
   {
     question: "How do you price consultancy engagements?",
     answer:
-      "Scope is agreed after discovery. Share your objectives via the contact page and we will propose a practical structure.",
+      "We agree scope after understanding your situation. Use the contact form to describe your priorities; we will propose a clear structure and next steps.",
   },
   {
     question: "How can we start working with Eaglewise?",
     answer:
-      "Use the professional services contact form with your company profile and priority outcomes. Our team will respond with next steps.",
+      "Send an inquiry through the professional contact page with your company profile and what you need. Our team will reply with practical follow-up.",
   },
 ];
 
@@ -40,15 +40,15 @@ export default function ProfessionalFaqPage() {
         imageSrc="/home-office-dubai.jpg"
         imageAlt="Professional workspace in Dubai"
         eyebrow="FAQ · Professional Services"
-        title="Answers before you reach out"
-        subtitle="Quick clarity on how we work, who we serve, and how engagements are structured."
+        title="Frequently asked questions"
+        subtitle="Straight answers on services, clients, and how to engage with Eaglewise."
       />
       <Section
         id="faq-list"
         className="bg-white"
         eyebrow="Topics"
-        title="Common questions about our advisory work"
-        description="If you need detail specific to your company, we can respond with a tailored outline."
+        title="Professional consultancy"
+        description="If your question is specific to your entity or sector, contact us for a tailored response."
       >
         <div className="space-y-4 md:space-y-5">
           {faqs.map((item) => (
@@ -65,8 +65,8 @@ export default function ProfessionalFaqPage() {
 
       <CtaStrip
         id="faq-cta"
-        title="Have a specific question?"
-        description="Speak with Eaglewise directly about reporting, tax, or advisory priorities for your leadership team."
+        title="Need a direct answer?"
+        description="Reach out about reporting, tax, audit, or advisory priorities for your team."
         primaryLabel="Contact Us"
         primaryHref="/professional/contact"
         secondaryLabel="About Us"

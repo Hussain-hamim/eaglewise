@@ -17,44 +17,45 @@ export default function TradingMarketsPage() {
           imageAlt="Logistics and distribution operations"
           imagePositionClassName="object-[center_40%] sm:object-[center_35%]"
           eyebrow="Markets & distribution"
-          title="Channels & coverage"
-          subtitle="Wholesale, e-commerce, and regional distribution—aligned from UAE supply to partner-led fulfilment."
+          title="From UAE supply to regional markets"
+          subtitle="General trading, import and export, wholesale distribution, and e-commerce—aligned with our partner network for coverage and execution."
         />
         <Section
           id="markets-overview"
           className="bg-white"
           eyebrow="Overview"
-          title="Connecting suppliers, channels, and regional demand"
-          description="Eaglewise operates across international sourcing, wholesale distribution, and digital marketplace sales."
+          title="How Eaglewise connects supply and demand"
+          description="Eaglewise operates in international trading and wholesale distribution of consumer goods, sources from reputable UAE suppliers, and uses digital channels to reach customers."
         >
           <div className="grid gap-5 md:grid-cols-2 md:gap-6">
             <article className="eagle-card p-6 md:p-7">
               <div className="mb-3 flex items-center gap-3">
                 <Package className="h-5 w-5 text-[#EB8B2E]" />
-                <h3 className="text-2xl font-bold tracking-tight">General trading & wholesale</h3>
+                <h3 className="text-2xl font-bold tracking-tight">General trading &amp; wholesale</h3>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
-                We source products from reputable UAE suppliers and export to regional markets through a trusted
-                partner network.
+                We source high-quality products from suppliers in the UAE and distribute to regional markets. We have
+                purchased and traded products from suppliers including Beauty Vision (Kera Look cosmetics), My Perfume,
+                and Efolia.
               </p>
               <ul className="mt-4 space-y-2 text-sm text-foreground md:text-base">
                 {suppliers.map((supplier) => (
-                  <li key={supplier}>- {supplier}</li>
+                  <li key={supplier}>{supplier}</li>
                 ))}
               </ul>
             </article>
             <article className="eagle-card p-6 md:p-7">
               <div className="mb-3 flex items-center gap-3">
                 <ShoppingBag className="h-5 w-5 text-[#EB8B2E]" />
-                <h3 className="text-2xl font-bold tracking-tight">E-commerce & digital trading</h3>
+                <h3 className="text-2xl font-bold tracking-tight">E-commerce &amp; digital trading</h3>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
-                Our digital growth model expands product reach through major online channels, serving both wholesale
-                and retail demand.
+                We operate on major online marketplaces and run both wholesale and retail sales for selected consumer
+                products.
               </p>
               <ul className="mt-4 space-y-2 text-sm text-foreground md:text-base">
                 {channels.map((channel) => (
-                  <li key={channel}>- {channel}</li>
+                  <li key={channel}>{channel}</li>
                 ))}
               </ul>
             </article>
@@ -65,18 +66,24 @@ export default function TradingMarketsPage() {
           id="regional-network"
           className="bg-neutral-50/80"
           eyebrow="Network"
-          title="Regional network"
-          description="Our business network supports reliable logistics, market coverage, and operational continuity."
+          title="Regional business network"
+          description="Eaglewise connects UAE suppliers with Afghan markets through established partner organisations."
         >
           <div className="grid gap-5 md:grid-cols-2 md:gap-6">
             <article className="eagle-card p-6 md:p-7">
               <div className="mb-3 flex items-center gap-3">
                 <Truck className="h-5 w-5 text-[#EB8B2E]" />
-                <h3 className="text-xl font-bold tracking-tight">Khan Naseri Trading Company</h3>
+                <h3 className="text-xl font-bold tracking-tight">Khan Naseri Trading Company (Afghanistan)</h3>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
-                Handles wholesale distribution across all 34 provinces of Afghanistan for consistent market coverage
-                and logistics execution.
+                Exports to Afghanistan are routed through this partner, which manages wholesale distribution across all
+                34 provinces. In market, they also trade as import/export agents for brands such as Forvil Cosmetics and
+                Herbal Bio Amla, alongside the Beauty Vision, My Perfume, and Efolia lines referenced in our profile.
+              </p>
+              <p className="mt-3 text-sm text-muted-foreground">
+                <a href="/trading/partners#khan-naseri-showcase" className="font-semibold text-[#EB8B2E] underline-offset-2 hover:underline">
+                  View photo showcase
+                </a>
               </p>
             </article>
             <article className="eagle-card p-6 md:p-7">
@@ -85,8 +92,8 @@ export default function TradingMarketsPage() {
                 <h3 className="text-xl font-bold tracking-tight">UAE corridor</h3>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
-                Eaglewise bridges UAE suppliers with regional demand, with emphasis on transparent coordination and
-                dependable fulfilment partners.
+                Eaglewise bridges international suppliers and regional demand with coordinated sourcing, transparent
+                handoffs, and fulfilment aligned to the product strategy.
               </p>
             </article>
           </div>
@@ -94,11 +101,11 @@ export default function TradingMarketsPage() {
 
         <CtaStrip
           id="markets-cta"
-          title="Expand your distribution footprint"
-          description="Work with Eaglewise to strengthen sourcing, market access, and channel execution."
-          primaryLabel="Start partnership discussion"
+          title="Discuss sourcing or distribution"
+          description="Share your categories, volumes, and target regions. We will outline how Eaglewise can support trade and channel execution."
+          primaryLabel="Contact trading team"
           primaryHref="/trading/contact"
-          secondaryLabel="View products"
+          secondaryLabel="Products & channels"
           secondaryHref="/trading/products"
           imageSrc="/trading/cta-partners.jpg"
           imageAlt="Business partnership meeting"

@@ -10,21 +10,21 @@ import { ArrowLeft, ArrowRight, Star } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "The team is practical, responsive, and clear in communication. Their advisory support has been valuable for planning.",
+      "The team is practical, responsive, and clear in communication. Their advisory support helped us align reporting with decision-making.",
     author: "UAE Consultancy Client",
-    date: "2026-03-01",
+    context: "Finance and reporting advisory",
   },
   {
     quote:
-      "Communication has been clear and professional from day one. We saw stronger execution across our regional operations.",
+      "Communication was clear from day one, and the engagement remained focused on practical execution across teams.",
     author: "Business Advisory Client",
-    date: "2026-02-19",
+    context: "Operational advisory",
   },
   {
     quote:
-      "Eaglewise helped us streamline reporting and improve financial visibility within a short timeframe.",
+      "Eaglewise helped us improve financial visibility and structure our internal processes with clear checkpoints.",
     author: "Finance Leadership Team",
-    date: "2026-03-10",
+    context: "Accounting and controls support",
   },
 ];
 
@@ -47,8 +47,8 @@ export default function ProfessionalTestimonialsPage() {
         imageSrc="/cta-executive-meeting.jpg"
         imageAlt="Executive advisory discussion"
         eyebrow="Testimonials"
-        title="Client voices"
-        subtitle="What partners and leadership teams say about working with Eaglewise on finance and advisory."
+        title="Client feedback highlights"
+        subtitle="Selected feedback from advisory engagements across finance, compliance, and operations."
       />
       <section id="client-feedback" className="bg-gradient-to-b from-white to-neutral-50/90 py-14 md:py-20">
         <div className="container-shell">
@@ -60,7 +60,7 @@ export default function ProfessionalTestimonialsPage() {
               Advisory clients on working with Eaglewise
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
-              Highlights from companies we have supported on finance and business advisory.
+              Feedback from companies we have supported through professional consultancy services.
             </p>
           </div>
 
@@ -100,11 +100,11 @@ export default function ProfessionalTestimonialsPage() {
                         />
                       ))}
                     </div>
-                    <span className="text-xs font-medium text-muted-foreground">{item.date}</span>
+                    <span className="text-xs font-medium text-muted-foreground">{item.context}</span>
                   </div>
                   <p className="text-sm font-semibold text-foreground">{item.author}</p>
                   <p className="mt-3 text-base leading-7 text-muted-foreground">{item.quote}</p>
-                  <p className="mt-6 text-sm font-semibold text-foreground">Trustpilot</p>
+                  <p className="mt-6 text-sm font-semibold text-foreground">Advisory engagement</p>
                 </article>
               ))}
             </div>
@@ -121,23 +121,23 @@ export default function ProfessionalTestimonialsPage() {
         <div className="grid gap-5 md:grid-cols-3 md:gap-6">
           <article className="eagle-card p-6 md:p-7">
             <h3 className="text-3xl font-bold text-[#EB8B2E]">Skylink &amp; Shanzer</h3>
-            <p className="mt-2 text-sm text-muted-foreground">UAE companies supported with consultancy services</p>
+            <p className="mt-2 text-sm text-muted-foreground">Companies referenced in our UAE consultancy portfolio</p>
           </article>
           <article className="eagle-card p-6 md:p-7">
             <h3 className="text-3xl font-bold text-[#EB8B2E]">10+ Lines</h3>
-            <p className="mt-2 text-sm text-muted-foreground">Professional advisory and compliance capabilities</p>
+            <p className="mt-2 text-sm text-muted-foreground">Professional service lines from accounting to business development</p>
           </article>
           <article className="eagle-card p-6 md:p-7">
             <h3 className="text-3xl font-bold text-[#EB8B2E]">2025</h3>
-            <p className="mt-2 text-sm text-muted-foreground">UAE establishment with a consultancy-first model</p>
+            <p className="mt-2 text-sm text-muted-foreground">Year Eaglewise was established in the UAE</p>
           </article>
         </div>
       </Section>
 
       <CtaStrip
         id="testimonials-cta"
-        title="Want your success story featured here?"
-        description="Start a consultancy engagement and we can build measurable outcomes together."
+        title="Discuss your consultancy requirements"
+        description="Share your business objectives and we will propose a clear engagement path."
         primaryLabel="Contact Eaglewise"
         primaryHref="/professional/contact"
         secondaryLabel="View Services"

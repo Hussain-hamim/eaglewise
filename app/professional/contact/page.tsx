@@ -14,15 +14,15 @@ export default function ProfessionalContactPage() {
         imageSrc="/hero-dubai.jpg"
         imageAlt="Dubai skyline — Eaglewise professional services"
         eyebrow="Contact · Professional Services"
-        title="Start a conversation"
-        subtitle="Accounting, tax, audit, or advisory—share your context and we will respond with next steps."
+        title="Business inquiries and consultancy"
+        subtitle="For partnerships, consultancy services, and professional support, contact us through the form below or our official channels."
       />
       <Section
         id="contact-main"
         className="bg-white"
         eyebrow="Inquiry"
-        title="Consultancy and advisory inquiries"
-        description="For accounting, tax, audit, and business advisory requests, share your details and our team will respond."
+        title="Send a professional services inquiry"
+        description="Tell us about your company and whether you need accounting, audit, tax, investment planning, marketing or communications advisory, project management, or business development support."
       >
         <div className="grid gap-5 lg:grid-cols-2 lg:gap-8">
           <article className="eagle-card p-6 md:p-8">

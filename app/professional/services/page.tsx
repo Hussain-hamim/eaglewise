@@ -13,19 +13,39 @@ import {
   Briefcase,
   ClipboardList,
   Rocket,
+  ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 
-const serviceCards = [
-  { title: "Preparation and auditing of financial accounts", Icon: FileText },
-  { title: "Accounting and bookkeeping services", Icon: Calculator },
-  { title: "Internal audit services", Icon: ShieldCheck },
-  { title: "Tax consultancy and compliance advisory", Icon: Percent },
-  { title: "Investment analysis and financial planning", Icon: BarChart3 },
-  { title: "Marketing and public relations consultancy", Icon: Megaphone },
-  { title: "Corporate communication consultancy", Icon: Users },
-  { title: "Business advisory services", Icon: Briefcase },
-  { title: "Project management", Icon: ClipboardList },
-  { title: "Business development consultancy", Icon: Rocket },
+const serviceCategories = [
+  {
+    category: "Financial & Tax Advisory",
+    description: "Rigorous accounting, audit, and tax frameworks that keep your business compliant, transparent, and financially optimized.",
+    services: [
+      { title: "Financial Accounts & Audit", desc: "Accurate statements and audit-ready files for stakeholders and regulators.", Icon: FileText },
+      { title: "Accounting & Bookkeeping", desc: "Reliable monthly bookkeeping, reconciliations, and structured reporting.", Icon: Calculator },
+      { title: "Internal Audit Services", desc: "Risk-focused control reviews to improve operational integrity and confidence.", Icon: ShieldCheck },
+      { title: "Tax & Compliance Advisory", desc: "Clear tax planning and compliance guidance aligned with UAE obligations.", Icon: Percent },
+      { title: "Investment & Financial Planning", desc: "Data-backed financial planning frameworks for capital allocation and growth.", Icon: BarChart3 },
+    ]
+  },
+  {
+    category: "Strategy & Operations",
+    description: "Practical advisory services that bridge the gap between high-level strategy and ground-level execution.",
+    services: [
+      { title: "Business Advisory Services", desc: "Practical guidance for operations, governance, and market execution.", Icon: Briefcase },
+      { title: "Project Management", desc: "Structured planning, timeline control, and delivery oversight for complex initiatives.", Icon: ClipboardList },
+      { title: "Business Development", desc: "Market-entry and expansion support with measurable commercial milestones.", Icon: Rocket },
+    ]
+  },
+  {
+    category: "Corporate Communications",
+    description: "Positioning and communication systems that align your brand with your business objectives and stakeholders.",
+    services: [
+      { title: "Marketing & PR Consultancy", desc: "Positioning, communications planning, and brand visibility strategies.", Icon: Megaphone },
+      { title: "Corporate Communication", desc: "Communication systems that align internal teams, partners, and external audiences.", Icon: Users },
+    ]
+  }
 ];
 
 export default function ProfessionalServicesPage() {
@@ -33,67 +53,96 @@ export default function ProfessionalServicesPage() {
     <SiteShell>
       <SubpageHero
         variant="professional"
-        imageSrc="/home-office-team.jpg"
+        imageSrc="/professional-conference.jpg"
         imageAlt="Advisory and consultancy workspace"
+        imagePositionClassName="object-[center_30%]"
         eyebrow="Professional Services"
-        title="What we deliver"
-        subtitle="Practical accounting, tax, audit, and advisory scopes—structured for UAE and cross-border operators."
+        title="Professional services built for real operations"
+        subtitle="Accounting, audit, tax, and advisory services for businesses in the UAE and international markets."
       />
+
       <Section
         id="professional-services"
-        className="bg-white"
+        className="bg-white pb-20 pt-16 md:pb-32 md:pt-24"
         eyebrow="Service catalogue"
-        title="Consultancy support built for results"
-        description="We provide practical services for companies in the UAE and international markets, focused on efficiency, compliance, and sustainable growth."
+        title="Professional services by category"
+        description="Browse the full scope of consultancy lines we deliver for UAE and international clients."
       >
-        <div className="grid gap-5 md:grid-cols-2 md:gap-6">
-          {serviceCards.map(({ title, Icon }) => (
-            <article key={title} className="eagle-card p-6 transition hover:border-[#EB8B2E]/25 md:p-7">
-              <div className="mb-4 flex items-center gap-3">
-                <Icon className="h-5 w-5 text-[#EB8B2E]" />
+        <div className="space-y-20 md:space-y-32">
+          {serviceCategories.map((cat, i) => (
+            <div key={i} className="grid items-start gap-8 md:grid-cols-12 md:gap-12 lg:gap-16">
+              <div className="md:sticky md:top-32 md:col-span-5 lg:col-span-4">
+                <h2 className="text-2xl font-bold tracking-tight md:text-3xl">{cat.category}</h2>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+                  {cat.description}
+                </p>
               </div>
-              <h3 className="text-lg font-semibold">{title}</h3>
-            </article>
+              <div className="grid gap-4 sm:grid-cols-2 md:col-span-7 lg:col-span-8 md:gap-6">
+                {cat.services.map((srv) => (
+                  <article
+                    key={srv.title}
+                    className="group rounded-3xl border border-border/50 bg-neutral-50/50 p-6 transition-all hover:border-[#EB8B2E]/30 hover:bg-white hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] md:p-8"
+                  >
+                    <srv.Icon className="mb-5 h-6 w-6 text-[#EB8B2E] transition-transform group-hover:scale-110" />
+                    <h3 className="text-lg font-semibold leading-snug">{srv.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                      {srv.desc}
+                    </p>
+                  </article>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </Section>
 
-      <Section
-        id="how-we-work"
-        className="bg-neutral-50/80"
-        title="How we work"
-        description="Our engagements are structured to provide clarity from day one while remaining flexible to your operating context."
-      >
-        <div className="grid gap-5 md:grid-cols-3 md:gap-6">
-          <article className="eagle-card p-6 md:p-7">
-            <h3 className="text-xl font-semibold">1. Discovery</h3>
-            <p className="mt-3 text-sm leading-7 text-muted-foreground">
-              We understand your business needs, reporting obligations, and growth targets.
-            </p>
-          </article>
-          <article className="eagle-card p-6 md:p-7">
-            <h3 className="text-xl font-semibold">2. Structured plan</h3>
-            <p className="mt-3 text-sm leading-7 text-muted-foreground">
-              We define practical, measurable steps and support implementation with your team.
-            </p>
-          </article>
-          <article className="eagle-card p-6 md:p-7">
-            <h3 className="text-xl font-semibold">3. Ongoing support</h3>
-            <p className="mt-3 text-sm leading-7 text-muted-foreground">
-              We help maintain progress with follow-up advisory and performance reviews.
-            </p>
-          </article>
+      <section className="border-t border-border/40 bg-neutral-50/50 py-16 md:py-24">
+        <div className="container-shell">
+          <div className="grid items-start gap-12 md:grid-cols-12 md:gap-16">
+            <div className="md:sticky md:top-32 md:col-span-5 lg:col-span-4">
+              <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#EB8B2E]">Our Methodology</p>
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">A disciplined approach to engagement</h2>
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+                Our engagements are structured to provide clarity from day one, with practical deliverables and measurable progress checkpoints.
+              </p>
+              <Link
+                href="/professional/contact"
+                className="group mt-8 inline-flex items-center gap-2 text-sm font-bold text-primary transition-colors hover:text-primary/80"
+              >
+                Schedule a consultation
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </div>
+            
+            <div className="space-y-5 md:col-span-7 lg:col-span-8">
+              {[
+                { step: "01", title: "Discovery & Alignment", desc: "We begin by mapping your current operational reality, immediate pain points, and long-term objectives to ensure our scope is perfectly aligned." },
+                { step: "02", title: "Service Scope & Plan", desc: "We define scope, responsibilities, and timelines across accounting, compliance, and advisory workstreams." },
+                { step: "03", title: "Implementation Support", desc: "We support execution with regular follow-up, clear reporting, and practical adjustments when needed." }
+              ].map((item, i) => (
+                <div key={i} className="flex flex-col gap-5 rounded-3xl border border-border/50 bg-white p-7 shadow-sm transition-shadow hover:shadow-md sm:flex-row md:p-9">
+                  <div className="text-3xl font-light text-muted-foreground/30 md:text-4xl">{item.step}</div>
+                  <div>
+                    <h3 className="text-xl font-bold">{item.title}</h3>
+                    <p className="mt-3 leading-relaxed text-muted-foreground">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </Section>
+      </section>
 
       <CtaStrip
         id="request-consultation"
-        title="Need a tailored consultancy package?"
-        description="Share your current challenge and we will recommend the right service scope."
+        title="Need support on finance, tax, or business advisory?"
+        description="Share your business context and priorities. Our team will propose a practical service scope."
         primaryLabel="Request Consultation"
         primaryHref="/professional/contact"
         secondaryLabel="About Eaglewise"
         secondaryHref="/professional/about"
+        imageSrc="/cta-executive-meeting.jpg"
+        imageAlt="Consultants discussing strategy with clients"
       />
     </SiteShell>
   );
