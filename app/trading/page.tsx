@@ -138,10 +138,10 @@ export default function TradingHomePage() {
         <section className="relative w-full pb-0 pt-0">
           <div className="relative h-[min(78vh,640px)] w-full min-w-0 overflow-hidden rounded-b-[2rem] md:h-[min(82vh,720px)] md:rounded-b-[3rem]">
             <Image
-              src="/trading/6.jpg"
-              alt="Business partners shaking hands in a professional setting"
+              src="/trading/hero-handshake-style.jpg"
+              alt="Team collaborating at a workstation in a modern open-plan office"
               fill
-              className="object-cover object-[center_30%] sm:object-[center_20%]"
+              className="object-cover object-[center_30%] sm:object-[center_25%]"
               priority
               sizes="100vw"
             />
