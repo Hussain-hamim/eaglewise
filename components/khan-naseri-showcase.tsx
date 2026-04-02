@@ -7,7 +7,7 @@ export function KhanNaseriShowcase() {
   return (
     <section
       id="khan-naseri-showcase"
-      className="scroll-mt-36 border-t border-border/60 bg-gradient-to-b from-neutral-50/90 to-white py-14 md:py-20"
+      className="scroll-mt-36 bg-gradient-to-b from-neutral-50/90 to-white py-16 md:py-24"
     >
       <div className="container-shell">
         <div className="mb-10 max-w-3xl">
@@ -48,7 +48,7 @@ export function KhanNaseriShowcase() {
           {khanNaseriImages.map((item) => (
             <figure
               key={item.src}
-              className="group overflow-hidden rounded-2xl border border-border/60 bg-white shadow-sm transition hover:border-[#EB8B2E]/25 hover:shadow-md"
+              className="group overflow-hidden rounded-2xl bg-white shadow-[0_8px_30px_rgba(7,13,26,0.06)] transition hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(7,13,26,0.1)]"
             >
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100">
                 <Image
@@ -59,7 +59,7 @@ export function KhanNaseriShowcase() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
-              <figcaption className="border-t border-border/40 px-3 py-2.5 text-xs font-medium leading-snug text-muted-foreground md:text-[13px]">
+              <figcaption className="px-3 py-2.5 text-xs font-medium leading-snug text-muted-foreground md:text-[13px]">
                 {item.caption}
               </figcaption>
             </figure>
