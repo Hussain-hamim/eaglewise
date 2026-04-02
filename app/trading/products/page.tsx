@@ -44,7 +44,7 @@ export default function TradingProductsPage() {
         <SubpageHero
           variant="trading"
           imageSrc="/trading/hero-products.jpg"
-          imageAlt="KERA LOOK Hair Repair System product lineup"
+          imageAlt="KERA LOOK Hair Repair System — full product range"
           imagePositionClassName="object-[center_45%]"
           eyebrow="Products & channels"
           title="Sourcing, exports, trade and partnership"
