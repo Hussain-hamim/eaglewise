@@ -43,8 +43,8 @@ export default function TradingProductsPage() {
       <div className="bg-white text-foreground">
         <SubpageHero
           variant="trading"
-          imageSrc="/trading/split-ecommerce.jpg"
-          imageAlt="E-commerce and digital retail"
+          imageSrc="/trading/hero-products.jpg"
+          imageAlt="KERA LOOK Hair Repair System product lineup"
           imagePositionClassName="object-[center_45%]"
           eyebrow="Products & channels"
           title="Sourcing, exports, trade and partnership"
