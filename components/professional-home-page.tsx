@@ -105,7 +105,7 @@ export default function ProfessionalHomePage() {
   return (
     <SiteShell>
       <section className="pb-8 pt-0">
-        <div className="relative h-[min(85vh,720px)] overflow-hidden bg-secondary md:h-[min(90vh,800px)]">
+        <div className="relative min-h-[520px] overflow-hidden bg-secondary md:h-[min(82vh,720px)]">
           <motion.div
             initial={{ scale: 1.05, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -124,8 +124,8 @@ export default function ProfessionalHomePage() {
 
           <div className="absolute inset-0 bg-gradient-to-r from-secondary/98 via-secondary/85 to-secondary/30" />
 
-          <div className="absolute inset-0 flex items-center">
-            <div className="container-shell pt-12 md:pt-16">
+          <div className="absolute inset-0 flex items-end pb-20 md:items-center md:pb-0">
+            <div className="container-shell pt-8 md:pt-16">
               <motion.div
                 initial="hidden"
                 animate="visible"
@@ -141,7 +141,7 @@ export default function ProfessionalHomePage() {
 
                 <motion.h1
                   variants={fadeInUp}
-                  className="text-[2.5rem] font-bold leading-[1.1] tracking-tight text-white md:text-6xl lg:text-[4.5rem]"
+                  className="text-[1.75rem] font-bold leading-[1.12] tracking-tight text-white sm:text-[2.25rem] md:text-5xl lg:text-[4rem]"
                 >
                   Professional consultancy, <br />
                   <span className="text-white/70">UAE-based, internationally relevant.</span>
@@ -149,7 +149,7 @@ export default function ProfessionalHomePage() {
 
                 <motion.p
                   variants={fadeInUp}
-                  className="mt-5 max-w-xl text-xl leading-relaxed text-white/80 md:mt-6 md:text-lg"
+                  className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg md:mt-6 md:text-lg"
                 >
                   Accounting, audit, tax, investment planning, marketing and communications advisory, project management,
                   and business development—for companies in the UAE and international markets.
@@ -157,7 +157,7 @@ export default function ProfessionalHomePage() {
 
                 <motion.div
                   variants={fadeInUp}
-                  className="mt-8 flex flex-wrap items-center justify-center gap-3 md:mt-10 md:justify-start md:gap-4"
+                  className="mt-6 flex flex-wrap items-center justify-center gap-3 md:mt-10 md:justify-start md:gap-4"
                 >
                   <Link
                     href="/professional/contact"
