@@ -105,7 +105,7 @@ export default function ProfessionalHomePage() {
   return (
     <SiteShell>
       <section className="pb-8 pt-0">
-        <div className="relative min-h-[520px] overflow-hidden bg-secondary md:h-[min(82vh,720px)]">
+        <div className="relative min-h-[420px] overflow-hidden bg-secondary md:h-[min(70vh,620px)]">
           <motion.div
             initial={{ scale: 1.05, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
