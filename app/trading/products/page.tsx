@@ -85,14 +85,14 @@ export default function TradingProductsPage() {
             {khanNaseriProductHighlights.map((item) => (
               <figure
                 key={item.src}
-                className="overflow-hidden rounded-2xl border border-border/60 bg-white shadow-sm"
+                className="group overflow-hidden rounded-2xl bg-white shadow-[0_8px_30px_rgba(7,13,26,0.06)] transition hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(7,13,26,0.1)]"
               >
-                <div className="relative aspect-[3/4] w-full bg-neutral-100">
+                <div className="relative aspect-[3/4] w-full overflow-hidden bg-neutral-100">
                   <Image
                     src={item.src}
                     alt={item.alt}
                     fill
-                    className="object-cover object-center"
+                    className="object-cover object-center transition duration-300 group-hover:scale-[1.02]"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
