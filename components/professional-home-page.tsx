@@ -205,7 +205,7 @@ export default function ProfessionalHomePage() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-            className="relative z-10 -mt-10 mx-auto max-w-5xl rounded-[2.5rem] bg-surface px-6 py-8 shadow-[0_16px_48px_rgba(7,13,26,0.08)] md:-mt-16 md:px-10 md:py-8"
+            className="relative z-10 mt-6 mx-auto max-w-4xl rounded-[2rem] bg-surface px-5 py-6 shadow-[0_12px_40px_rgba(7,13,26,0.07)] md:mt-8 md:px-8 md:py-6"
           >
             <div className="grid grid-cols-1 gap-6 divide-y divide-border/40 md:grid-cols-3 md:gap-0 md:divide-x md:divide-y-0">
               <article className="flex flex-col items-center pt-4 first:pt-0 md:items-start md:px-8 md:py-0 md:first:pl-0">
@@ -215,7 +215,7 @@ export default function ProfessionalHomePage() {
                     Established
                   </p>
                 </div>
-                <p className="mt-2.5 text-2xl font-bold tracking-tight text-foreground md:text-[2rem]">March 2025</p>
+                <p className="mt-2 text-lg font-bold tracking-tight text-foreground md:text-xl">March 2025</p>
               </article>
               <article className="flex flex-col items-center pt-6 md:items-start md:px-8 md:py-0">
                 <div className="flex items-center gap-2.5">
@@ -224,7 +224,7 @@ export default function ProfessionalHomePage() {
                     Service lines
                   </p>
                 </div>
-                <p className="mt-2.5 text-2xl font-bold tracking-tight text-foreground md:text-[2rem]">10+ professional services</p>
+                <p className="mt-2 text-lg font-bold tracking-tight text-foreground md:text-xl">10+ professional services</p>
               </article>
               <article className="flex flex-col items-center pt-6 md:items-start md:px-8 md:py-0 md:last:pr-0">
                 <div className="flex items-center gap-2.5">
@@ -233,7 +233,7 @@ export default function ProfessionalHomePage() {
                     Coverage
                   </p>
                 </div>
-                <p className="mt-2.5 text-2xl font-bold tracking-tight text-foreground md:text-[2rem]">UAE &amp; International</p>
+                <p className="mt-2 text-lg font-bold tracking-tight text-foreground md:text-xl">UAE &amp; International</p>
               </article>
             </div>
           </motion.div>
