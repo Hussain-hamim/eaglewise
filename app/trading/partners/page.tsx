@@ -44,7 +44,7 @@ export default function TradingPartnersPage() {
           <div className="grid gap-5 md:grid-cols-2 md:gap-6">
             <article className="eagle-card p-6 md:p-7">
               <div className="mb-3 flex items-center gap-3">
-                <Truck className="h-5 w-5 text-[#EB8B2E]" />
+                <Truck className="h-5 w-5 text-[#C9873B]" />
                 <h3 className="text-xl font-bold tracking-tight">Khan Naseri Trading Company (Afghanistan)</h3>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
@@ -52,7 +52,7 @@ export default function TradingPartnersPage() {
                 efficient logistics and market coverage for goods exported from our UAE trading operations. Also active
                 in import and export trading and as a distribution agent for brands including Forvil Cosmetics and
                 Herbal Bio Amla (see{" "}
-                <a href="#khan-naseri-showcase" className="font-semibold text-[#EB8B2E] underline-offset-2 hover:underline">
+                <a href="#khan-naseri-showcase" className="font-semibold text-[#C9873B] underline-offset-2 hover:underline">
                   partner showcase
                 </a>
                 ).
@@ -60,7 +60,7 @@ export default function TradingPartnersPage() {
             </article>
             <article className="eagle-card p-6 md:p-7">
               <div className="mb-3 flex items-center gap-3">
-                <MapPinned className="h-5 w-5 text-[#EB8B2E]" />
+                <MapPinned className="h-5 w-5 text-[#C9873B]" />
                 <h3 className="text-xl font-bold tracking-tight">Eaglewise Chartered Accountants Company (Afghanistan)</h3>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
@@ -76,21 +76,21 @@ export default function TradingPartnersPage() {
         <Section className="bg-white" eyebrow="Fit" title="What we look for in partners">
           <div className="grid gap-5 md:grid-cols-3 md:gap-6">
             <article className="eagle-card p-6 md:p-7">
-              <Handshake className="mb-3 h-5 w-5 text-[#EB8B2E]" />
+              <Handshake className="mb-3 h-5 w-5 text-[#C9873B]" />
               <h3 className="text-lg font-bold tracking-tight">Operational readiness</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">
                 Clear ability to fulfil orders, respect compliance, and plan volumes realistically.
               </p>
             </article>
             <article className="eagle-card p-6 md:p-7">
-              <Truck className="mb-3 h-5 w-5 text-[#EB8B2E]" />
+              <Truck className="mb-3 h-5 w-5 text-[#C9873B]" />
               <h3 className="text-lg font-bold tracking-tight">Market fit</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">
                 Distribution or digital channels that match the product categories and regions we serve.
               </p>
             </article>
             <article className="eagle-card p-6 md:p-7">
-              <MapPinned className="mb-3 h-5 w-5 text-[#EB8B2E]" />
+              <MapPinned className="mb-3 h-5 w-5 text-[#C9873B]" />
               <h3 className="text-lg font-bold tracking-tight">Transparent collaboration</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">
                 Shared visibility on timelines, issues, and performance so problems get resolved on the ground.

@@ -10,7 +10,7 @@ html {
   --muted-foreground: #5f6470;
   --surface: #ffffff;
   --surface-alt: #f0f3f8;
-  --primary: #EB8B2E;
+  --primary: #C9873B;
   --primary-foreground: #ffffff;
   --secondary: #070d1a;
   --secondary-foreground: #ffffff;
@@ -88,7 +88,7 @@ a {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #EB8B2E, #f5b066, #EB8B2E);
+  background: linear-gradient(90deg, #C9873B, #D9A562, #C9873B);
   background-size: 200% 100%;
   animation: shimmer 3s ease-in-out infinite;
 }
@@ -112,7 +112,7 @@ a {
 
 /* Gradient text utility */
 .text-gradient {
-  background: linear-gradient(135deg, #EB8B2E 0%, #d97a22 50%, #f5b066 100%);
+  background: linear-gradient(135deg, #C9873B 0%, #B5772F 50%, #D9A562 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -120,9 +120,9 @@ a {
 
 /* Pulse ring animation for icon hover */
 @keyframes pulseRing {
-  0% { box-shadow: 0 0 0 0 rgba(235, 139, 46, 0.25); }
-  70% { box-shadow: 0 0 0 10px rgba(235, 139, 46, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(235, 139, 46, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(201, 135, 59, 0.25); }
+  70% { box-shadow: 0 0 0 10px rgba(201, 135, 59, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(201, 135, 59, 0); }
 }
 
 .pulse-ring:hover {

@@ -28,7 +28,7 @@ export function SiteFooter() {
           <p className="mt-5 text-sm leading-7 text-secondary-foreground/80">{cfg.footerBlurb}</p>
           <Link
             href={cfg.footerCtaHref}
-            className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#EB8B2E] transition hover:text-[#ff9e45]"
+            className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#C9873B] transition hover:text-[#D9A562]"
           >
             {cfg.footerCtaLabel}
             <ArrowUpRight className="h-4 w-4" />
@@ -66,45 +66,45 @@ export function SiteFooter() {
           </h4>
           <ul className="mt-4 space-y-3 text-sm text-secondary-foreground/90">
             <li className="flex items-center gap-3">
-              <Globe className="h-4 w-4 shrink-0 text-[#EB8B2E]" />
+              <Globe className="h-4 w-4 shrink-0 text-[#C9873B]" />
               <span>Location: {companyInfo.location}</span>
             </li>
             <li className="flex items-center gap-3">
-              <Phone className="h-4 w-4 shrink-0 text-[#EB8B2E]" />
-              <a href={`tel:${companyInfo.phoneTel}`} className="transition hover:text-[#EB8B2E]">
+              <Phone className="h-4 w-4 shrink-0 text-[#C9873B]" />
+              <a href={`tel:${companyInfo.phoneTel}`} className="transition hover:text-[#C9873B]">
                 Phone: {companyInfo.phone}
               </a>
             </li>
             <li className="flex items-center gap-3">
-              <Mail className="h-4 w-4 shrink-0 text-[#EB8B2E]" />
-              <a href={`mailto:${companyInfo.email}`} className="transition hover:text-[#EB8B2E]">
+              <Mail className="h-4 w-4 shrink-0 text-[#C9873B]" />
+              <a href={`mailto:${companyInfo.email}`} className="transition hover:text-[#C9873B]">
                 Email: {companyInfo.email}
               </a>
             </li>
             <li className="flex items-center gap-3">
-              <Globe className="h-4 w-4 shrink-0 text-[#EB8B2E]" />
+              <Globe className="h-4 w-4 shrink-0 text-[#C9873B]" />
               <a
                 href={companyInfo.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition hover:text-[#EB8B2E]"
+                className="transition hover:text-[#C9873B]"
               >
                 Website: eaglewisebiz.com
               </a>
             </li>
             <li className="flex items-center gap-3">
-              <LinkedinIcon className="h-4 w-4 shrink-0 text-[#EB8B2E]" />
+              <LinkedinIcon className="h-4 w-4 shrink-0 text-[#C9873B]" />
               <a
                 href={companyInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition hover:text-[#EB8B2E]"
+                className="transition hover:text-[#C9873B]"
               >
                 LinkedIn
               </a>
             </li>
             <li className="flex items-start gap-3">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#EB8B2E]" />
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#C9873B]" />
               <span>Address: {companyInfo.address}</span>
             </li>
           </ul>

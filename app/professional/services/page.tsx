@@ -81,9 +81,9 @@ export default function ProfessionalServicesPage() {
                 {cat.services.map((srv) => (
                   <article
                     key={srv.title}
-                    className="group rounded-3xl border border-border/50 bg-neutral-50/50 p-6 transition-all hover:border-[#EB8B2E]/30 hover:bg-white hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] md:p-8"
+                    className="group rounded-3xl border border-border/50 bg-neutral-50/50 p-6 transition-all hover:border-[#C9873B]/30 hover:bg-white hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] md:p-8"
                   >
-                    <srv.Icon className="mb-5 h-6 w-6 text-[#EB8B2E] transition-transform group-hover:scale-110" />
+                    <srv.Icon className="mb-5 h-6 w-6 text-[#C9873B] transition-transform group-hover:scale-110" />
                     <h3 className="text-lg font-semibold leading-snug">{srv.title}</h3>
                     <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                       {srv.desc}
@@ -100,7 +100,7 @@ export default function ProfessionalServicesPage() {
         <div className="container-shell">
           <div className="grid items-start gap-12 md:grid-cols-12 md:gap-16">
             <div className="md:sticky md:top-32 md:col-span-5 lg:col-span-4">
-              <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#EB8B2E]">Our Methodology</p>
+              <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#C9873B]">Our Methodology</p>
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">A disciplined approach to engagement</h2>
               <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
                 Our engagements are structured to provide clarity from day one, with practical deliverables and measurable progress checkpoints.

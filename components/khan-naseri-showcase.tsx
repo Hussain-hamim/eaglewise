@@ -11,7 +11,7 @@ export function KhanNaseriShowcase() {
     >
       <div className="container-shell">
         <div className="mb-10 max-w-3xl">
-          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#EB8B2E] md:text-xs">
+          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C9873B] md:text-xs">
             Regional partner · Afghanistan
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
@@ -37,7 +37,7 @@ export function KhanNaseriShowcase() {
             href={khanNaseriLinkedInUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#EB8B2E] transition hover:underline"
+            className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#C9873B] transition hover:underline"
           >
             View Khan Naseri Trading Company on LinkedIn
             <ExternalLink className="h-4 w-4" aria-hidden />
@@ -69,7 +69,7 @@ export function KhanNaseriShowcase() {
         <p className="mt-8 text-center text-xs text-muted-foreground md:text-sm">
           For orders or partner enquiries in Afghanistan, use the contact details published by Khan Naseri Trading
           Company on their official channels. For Eaglewise UAE trading or sourcing, use{" "}
-          <Link href="/trading/contact" className="font-semibold text-[#EB8B2E] underline-offset-2 hover:underline">
+          <Link href="/trading/contact" className="font-semibold text-[#C9873B] underline-offset-2 hover:underline">
             our trading contact form
           </Link>
           .

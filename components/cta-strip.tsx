@@ -39,7 +39,7 @@ export function CtaStrip({
             imageSrc ? "grid gap-0 md:min-h-[min(560px,56vh)] md:grid-cols-12" : "px-6 py-10 md:px-10 md:py-12"
           }`}
         >
-          <div className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-[#EB8B2E]/15 blur-3xl" />
+          <div className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-[#C9873B]/15 blur-3xl" />
           <div className="pointer-events-none absolute -left-10 -bottom-16 h-48 w-48 rounded-full bg-white/5 blur-3xl" />
 
           {imageSrc ? (
@@ -62,7 +62,7 @@ export function CtaStrip({
                 : ""
             }`}
           >
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[#EB8B2E] w-fit">
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[#C9873B] w-fit">
               <Sparkles className="h-3.5 w-3.5" />
               Let&apos;s Build Together
             </span>

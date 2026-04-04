@@ -75,7 +75,7 @@ export default function ProfessionalAboutPage() {
         <div className="grid gap-5 md:grid-cols-2 md:gap-6">
           <article className="eagle-card p-6 md:p-7">
             <div className="mb-3 flex items-center gap-3">
-              <Compass className="h-5 w-5 text-[#EB8B2E]" />
+              <Compass className="h-5 w-5 text-[#C9873B]" />
               <h3 className="text-2xl font-semibold">Vision</h3>
             </div>
             <p className="mt-3 text-sm leading-7 text-muted-foreground">
@@ -86,7 +86,7 @@ export default function ProfessionalAboutPage() {
 
           <article className="eagle-card p-6 md:p-7">
             <div className="mb-3 flex items-center gap-3">
-              <ClipboardList className="h-5 w-5 text-[#EB8B2E]" />
+              <ClipboardList className="h-5 w-5 text-[#C9873B]" />
               <h3 className="text-2xl font-semibold">Mission</h3>
             </div>
             <ul className="mt-3 space-y-2 text-sm leading-7 text-muted-foreground">
@@ -124,7 +124,7 @@ export default function ProfessionalAboutPage() {
           {values.map(({ title, Icon, description }) => (
             <article key={title} className="eagle-card p-5 md:p-6">
               <div className="flex items-center gap-3">
-                <Icon className="h-5 w-5 shrink-0 text-[#EB8B2E]" />
+                <Icon className="h-5 w-5 shrink-0 text-[#C9873B]" />
                 <h3 className="text-lg font-semibold">{title}</h3>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{description}</p>

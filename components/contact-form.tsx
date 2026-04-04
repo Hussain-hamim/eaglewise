@@ -27,7 +27,7 @@ export function ContactForm({ formType }: ContactFormProps) {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorDetail, setErrorDetail] = useState("");
 
-  const ringClass = formType === "trading" ? "ring-[#EB8B2E]" : "ring-primary";
+  const ringClass = formType === "trading" ? "ring-[#C9873B]" : "ring-primary";
 
   /** Free Web3Forms tier is meant for browser submits only (server-side needs paid + IP allowlist). */
   const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
@@ -136,7 +136,7 @@ export function ContactForm({ formType }: ContactFormProps) {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="inline-flex items-center justify-center gap-2 rounded-full bg-[#EB8B2E] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#d97a22] disabled:cursor-not-allowed disabled:opacity-70"
+        className="inline-flex items-center justify-center gap-2 rounded-full bg-[#C9873B] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#B5772F] disabled:cursor-not-allowed disabled:opacity-70"
       >
         {status === "sending" ? (
           <>
@@ -162,7 +162,7 @@ export function ContactForm({ formType }: ContactFormProps) {
         Submissions are delivered by email. You can also write directly to{" "}
         <a
           href={`mailto:${companyInfo.email}`}
-          className="font-medium text-[#EB8B2E] underline-offset-2 hover:underline"
+          className="font-medium text-[#C9873B] underline-offset-2 hover:underline"
         >
           {companyInfo.email}
         </a>

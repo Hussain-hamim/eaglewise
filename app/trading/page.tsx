@@ -159,7 +159,7 @@ export default function TradingHomePage() {
                 >
                   <motion.p
                     variants={fadeInUp}
-                    className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#EB8B2E]"
+                    className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#C9873B]"
                   >
                     Trading &amp; Partnership
                   </motion.p>
@@ -182,7 +182,7 @@ export default function TradingHomePage() {
                   >
                     <Link
                       href="/trading/contact"
-                      className="inline-flex items-center justify-center rounded-full bg-[#EB8B2E] px-8 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#d97a22]"
+                      className="inline-flex items-center justify-center rounded-full bg-[#C9873B] px-8 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#B5772F]"
                     >
                       Partner with us
                     </Link>
@@ -204,11 +204,11 @@ export default function TradingHomePage() {
             animate="visible"
             className="pointer-events-none mt-8 flex flex-col items-center gap-2 px-4 text-center md:absolute md:bottom-8 md:left-0 md:right-0 md:mt-0"
           >
-            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#EB8B2E]">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#C9873B]">
               Eaglewise Business Consultancy LLC-FZ
             </p>
             <div className="flex items-center gap-2 text-xs font-medium text-neutral-600 md:text-white/80">
-              <Award className="h-4 w-4 text-[#EB8B2E]" />
+              <Award className="h-4 w-4 text-[#C9873B]" />
               <span>Authorized and registered in the UAE</span>
             </div>
           </motion.div>
@@ -257,7 +257,7 @@ export default function TradingHomePage() {
                   </p>
                   <Link
                     href={block.href}
-                    className="mt-8 inline-flex items-center justify-center rounded-full bg-[#EB8B2E] px-8 py-3 text-sm font-semibold text-white transition hover:bg-[#d97a22]"
+                    className="mt-8 inline-flex items-center justify-center rounded-full bg-[#C9873B] px-8 py-3 text-sm font-semibold text-white transition hover:bg-[#B5772F]"
                   >
                     {block.cta}
                   </Link>
@@ -337,11 +337,11 @@ export default function TradingHomePage() {
         {/* What partners can expect — icon cards, gradient band */}
         <section className="relative overflow-hidden bg-gradient-to-b from-white via-neutral-50/90 to-neutral-50 py-16 md:py-24">
           <div
-            className="pointer-events-none absolute -left-32 top-1/2 h-[28rem] w-[28rem] -translate-y-1/2 rounded-full bg-[#EB8B2E]/[0.07] blur-3xl"
+            className="pointer-events-none absolute -left-32 top-1/2 h-[28rem] w-[28rem] -translate-y-1/2 rounded-full bg-[#C9873B]/[0.07] blur-3xl"
             aria-hidden
           />
           <div
-            className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#EB8B2E]/30 to-transparent"
+            className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#C9873B]/30 to-transparent"
             aria-hidden
           />
           <div className="container-shell relative">
@@ -352,7 +352,7 @@ export default function TradingHomePage() {
               variants={fadeInUp}
               className="mx-auto max-w-2xl text-center"
             >
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#EB8B2E]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C9873B]">
                 Partnership standards
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
@@ -376,7 +376,7 @@ export default function TradingHomePage() {
                     variants={fadeInUp}
                     className="group relative rounded-2xl bg-white/90 p-6 shadow-[0_12px_40px_rgba(7,13,26,0.06)] backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_55px_rgba(7,13,26,0.1)] md:p-7"
                   >
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#EB8B2E]/18 to-[#EB8B2E]/5 text-[#EB8B2E] ring-1 ring-[#EB8B2E]/15 transition group-hover:from-[#EB8B2E]/25 group-hover:to-[#EB8B2E]/8">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#C9873B]/18 to-[#C9873B]/5 text-[#C9873B] ring-1 ring-[#C9873B]/15 transition group-hover:from-[#C9873B]/25 group-hover:to-[#C9873B]/8">
                       <Icon
                         className="h-6 w-6"
                         strokeWidth={1.65}
@@ -400,7 +400,7 @@ export default function TradingHomePage() {
         <section className="bg-white py-16 md:py-20">
           <div className="container-shell">
             <div className="mx-auto max-w-2xl text-center">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#EB8B2E]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C9873B]">
                 Partner feedback
               </p>
               <h2 className="mt-3 text-2xl font-bold tracking-tight md:text-4xl">
@@ -417,7 +417,7 @@ export default function TradingHomePage() {
                     {Array.from({ length: 5 }).map((_, i) => (
                       <Star
                         key={i}
-                        className="h-3.5 w-3.5 fill-[#EB8B2E] text-[#EB8B2E]"
+                        className="h-3.5 w-3.5 fill-[#C9873B] text-[#C9873B]"
                       />
                     ))}
                   </div>
@@ -434,7 +434,7 @@ export default function TradingHomePage() {
             <div className="mt-10 text-center">
               <Link
                 href="/trading/partners"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-foreground underline-offset-4 hover:text-[#EB8B2E] hover:underline"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-foreground underline-offset-4 hover:text-[#C9873B] hover:underline"
               >
                 Full partnership details
                 <ArrowRight className="h-4 w-4" />
@@ -447,7 +447,7 @@ export default function TradingHomePage() {
         <section className="bg-white py-10">
           <div className="container-shell flex flex-col items-center justify-between gap-6 md:flex-row">
             <div className="text-center md:text-left">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#EB8B2E]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C9873B]">
                 Eaglewise
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
@@ -489,13 +489,13 @@ export default function TradingHomePage() {
                 <div className="mt-8 flex flex-wrap gap-3">
                   <Link
                     href="/trading/contact"
-                    className="inline-flex rounded-full bg-[#EB8B2E] px-8 py-3 text-sm font-semibold text-white transition hover:bg-[#d97a22]"
+                    className="inline-flex rounded-full bg-[#C9873B] px-8 py-3 text-sm font-semibold text-white transition hover:bg-[#B5772F]"
                   >
                     Contact trading team
                   </Link>
                   <Link
                     href="/trading/products"
-                    className="inline-flex rounded-full border border-neutral-200 px-8 py-3 text-sm font-semibold text-foreground shadow-sm transition hover:shadow-md hover:text-[#EB8B2E]"
+                    className="inline-flex rounded-full border border-neutral-200 px-8 py-3 text-sm font-semibold text-foreground shadow-sm transition hover:shadow-md hover:text-[#C9873B]"
                   >
                     Product catalogue
                   </Link>

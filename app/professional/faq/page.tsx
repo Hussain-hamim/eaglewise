@@ -54,7 +54,7 @@ export default function ProfessionalFaqPage() {
           {faqs.map((item) => (
             <article key={item.question} className="eagle-card p-6 md:p-7">
               <div className="flex items-center gap-3">
-                <HelpCircle className="h-5 w-5 text-[#EB8B2E]" />
+                <HelpCircle className="h-5 w-5 text-[#C9873B]" />
                 <h3 className="text-lg font-semibold">{item.question}</h3>
               </div>
               <p className="mt-3 text-sm leading-7 text-muted-foreground">{item.answer}</p>

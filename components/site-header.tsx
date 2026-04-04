@@ -90,7 +90,7 @@ export function SiteHeader() {
                     href={item.href}
                     className={`whitespace-nowrap rounded-full border px-4 py-2 text-sm font-medium leading-none transition ${
                       isActive
-                        ? "!border-[#EB8B2E]/25 !bg-[#EB8B2E]/10 !font-semibold !text-[#EB8B2E] backdrop-blur"
+                        ? "!border-[#C9873B]/25 !bg-[#C9873B]/10 !font-semibold !text-[#C9873B] backdrop-blur"
                         : "border-transparent text-foreground/85 hover:bg-surface-alt hover:text-foreground"
                     }`}
                   >
@@ -104,7 +104,7 @@ export function SiteHeader() {
                       <p className="text-xl font-semibold text-foreground">{item.label}</p>
                       <Link
                         href={item.href}
-                        className="inline-flex items-center gap-1 text-sm font-semibold text-[#EB8B2E]"
+                        className="inline-flex items-center gap-1 text-sm font-semibold text-[#C9873B]"
                       >
                         View all
                         <ArrowUpRight className="h-4 w-4" />
@@ -133,7 +133,7 @@ export function SiteHeader() {
                 href={item.href}
                 className={`whitespace-nowrap rounded-full border px-4 py-2 text-sm font-medium leading-none transition ${
                   isActive
-                    ? "!border-[#EB8B2E]/25 !bg-[#EB8B2E]/10 !font-semibold !text-[#EB8B2E] backdrop-blur"
+                    ? "!border-[#C9873B]/25 !bg-[#C9873B]/10 !font-semibold !text-[#C9873B] backdrop-blur"
                     : "border-transparent text-foreground/85 hover:bg-surface-alt hover:text-foreground"
                 }`}
               >
@@ -184,7 +184,7 @@ export function SiteHeader() {
           />
           <div className="absolute right-0 top-0 flex h-full w-full max-w-md flex-col bg-white shadow-[0_0_40px_rgba(7,13,26,0.15)]">
             <div className="flex items-center justify-between border-b border-border/80 px-4 py-4">
-              <p className="text-sm font-bold uppercase tracking-[0.12em] text-[#EB8B2E]">Menu</p>
+              <p className="text-sm font-bold uppercase tracking-[0.12em] text-[#C9873B]">Menu</p>
               <button
                 type="button"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border text-foreground transition hover:bg-surface-alt"
@@ -216,7 +216,7 @@ export function SiteHeader() {
                               href={item.href}
                               onClick={closeMobile}
                               className={`flex flex-1 items-center py-2 text-base font-semibold tracking-tight ${
-                                isActive ? "text-[#EB8B2E]" : "text-foreground"
+                                isActive ? "text-[#C9873B]" : "text-foreground"
                               }`}
                             >
                               {item.label}
@@ -243,7 +243,7 @@ export function SiteHeader() {
                               id={`mobile-submenu-${item.href.replace(/\//g, "-")}`}
                               role="region"
                               aria-labelledby={`mobile-menu-trigger-${item.href.replace(/\//g, "-")}`}
-                              className="mt-1 flex flex-col gap-2 border-l-2 border-[#EB8B2E]/25 pl-3"
+                              className="mt-1 flex flex-col gap-2 border-l-2 border-[#C9873B]/25 pl-3"
                             >
                               {menuItems.map((menuItem) => (
                                 <Link
@@ -261,7 +261,7 @@ export function SiteHeader() {
                               <Link
                                 href={item.href}
                                 onClick={closeMobile}
-                                className="inline-flex items-center gap-1 py-2 pl-2 text-sm font-semibold text-[#EB8B2E]"
+                                className="inline-flex items-center gap-1 py-2 pl-2 text-sm font-semibold text-[#C9873B]"
                               >
                                 View all {item.label}
                                 <ArrowUpRight className="h-3.5 w-3.5" />
@@ -274,7 +274,7 @@ export function SiteHeader() {
                           href={item.href}
                           onClick={closeMobile}
                           className={`flex min-h-[44px] items-center py-2 text-base font-semibold tracking-tight ${
-                            isActive ? "text-[#EB8B2E]" : "text-foreground"
+                            isActive ? "text-[#C9873B]" : "text-foreground"
                           }`}
                         >
                           {item.label}
@@ -297,7 +297,7 @@ export function SiteHeader() {
               <Link
                 href={cfg.primaryCta.href}
                 onClick={closeMobile}
-                className="flex w-full items-center justify-center rounded-full bg-[#EB8B2E] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#d97a22]"
+                className="flex w-full items-center justify-center rounded-full bg-[#C9873B] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#B5772F]"
               >
                 {cfg.primaryCta.label}
               </Link>

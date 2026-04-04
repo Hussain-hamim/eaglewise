@@ -37,7 +37,7 @@ export function Section({ id, eyebrow, title, description, children, className }
           {eyebrow ? (
             <motion.p
               variants={fadeInUp}
-              className="mb-3 text-[11px] font-bold uppercase tracking-[0.2em] text-[#EB8B2E] md:text-[13px]"
+              className="mb-3 text-[11px] font-bold uppercase tracking-[0.2em] text-[#C9873B] md:text-[13px]"
             >
               {eyebrow}
             </motion.p>

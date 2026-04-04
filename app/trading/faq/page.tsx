@@ -56,7 +56,7 @@ export default function TradingFaqPage() {
             {faqs.map((item) => (
               <article key={item.question} className="eagle-card p-6 md:p-7">
                 <div className="flex items-center gap-3">
-                  <HelpCircle className="h-5 w-5 shrink-0 text-[#EB8B2E]" />
+                  <HelpCircle className="h-5 w-5 shrink-0 text-[#C9873B]" />
                   <h3 className="text-lg font-bold tracking-tight">{item.question}</h3>
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">{item.answer}</p>

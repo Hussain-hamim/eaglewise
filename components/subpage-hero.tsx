@@ -83,7 +83,7 @@ export function SubpageHero({
             >
               <motion.p
                 variants={fadeInUp}
-                className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#EB8B2E]"
+                className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#C9873B]"
               >
                 {eyebrow}
               </motion.p>

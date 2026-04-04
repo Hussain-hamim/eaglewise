@@ -29,7 +29,7 @@ export default function TradingContactPage() {
           <div className="grid gap-5 lg:grid-cols-2 lg:gap-8">
             <article className="eagle-card p-6 md:p-8">
               <div className="flex items-center gap-3">
-                <Send className="h-5 w-5 text-[#EB8B2E]" />
+                <Send className="h-5 w-5 text-[#C9873B]" />
                 <h3 className="text-xl font-bold tracking-tight">Send inquiry</h3>
               </div>
               <ContactForm formType="trading" />
@@ -40,7 +40,7 @@ export default function TradingContactPage() {
               <ul className="mt-5 space-y-3 text-sm leading-relaxed text-muted-foreground">
                 <li>
                   <div className="flex items-center gap-3">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#EB8B2E]/10 text-[#EB8B2E]">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#C9873B]/10 text-[#C9873B]">
                       <Globe className="h-4 w-4" />
                     </span>
                     <span>
@@ -50,7 +50,7 @@ export default function TradingContactPage() {
                 </li>
                 <li>
                   <div className="flex items-center gap-3">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#EB8B2E]/10 text-[#EB8B2E]">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#C9873B]/10 text-[#C9873B]">
                       <MapPin className="h-4 w-4" />
                     </span>
                     <span>
@@ -60,12 +60,12 @@ export default function TradingContactPage() {
                 </li>
                 <li>
                   <div className="flex items-center gap-3">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#EB8B2E]/10 text-[#EB8B2E]">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#C9873B]/10 text-[#C9873B]">
                       <Phone className="h-4 w-4" />
                     </span>
                     <span>
                       <span className="font-semibold text-foreground">Phone:</span>{" "}
-                      <a href={`tel:${companyInfo.phoneTel}`} className="text-[#EB8B2E] underline-offset-2 hover:underline">
+                      <a href={`tel:${companyInfo.phoneTel}`} className="text-[#C9873B] underline-offset-2 hover:underline">
                         {companyInfo.phone}
                       </a>
                     </span>
@@ -73,12 +73,12 @@ export default function TradingContactPage() {
                 </li>
                 <li>
                   <div className="flex items-center gap-3">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#EB8B2E]/10 text-[#EB8B2E]">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#C9873B]/10 text-[#C9873B]">
                       <Mail className="h-4 w-4" />
                     </span>
                     <span>
                       <span className="font-semibold text-foreground">Email:</span>{" "}
-                      <a href={`mailto:${companyInfo.email}`} className="text-[#EB8B2E] underline-offset-2 hover:underline">
+                      <a href={`mailto:${companyInfo.email}`} className="text-[#C9873B] underline-offset-2 hover:underline">
                         {companyInfo.email}
                       </a>
                     </span>
@@ -86,7 +86,7 @@ export default function TradingContactPage() {
                 </li>
                 <li>
                   <div className="flex items-start gap-3">
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#EB8B2E]/10 text-[#EB8B2E]">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#C9873B]/10 text-[#C9873B]">
                       <MapPin className="h-4 w-4" />
                     </span>
                     <span>
@@ -96,7 +96,7 @@ export default function TradingContactPage() {
                 </li>
                 <li>
                   <div className="flex items-center gap-3">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#EB8B2E]/10 text-[#EB8B2E]">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#C9873B]/10 text-[#C9873B]">
                       <Globe className="h-4 w-4" />
                     </span>
                     <span>
@@ -105,7 +105,7 @@ export default function TradingContactPage() {
                         href={companyInfo.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#EB8B2E] underline-offset-2 hover:underline"
+                        className="text-[#C9873B] underline-offset-2 hover:underline"
                       >
                         eaglewisebiz.com
                       </a>
@@ -114,7 +114,7 @@ export default function TradingContactPage() {
                 </li>
                 <li>
                   <div className="flex items-center gap-3">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#EB8B2E]/10 text-[#EB8B2E]">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#C9873B]/10 text-[#C9873B]">
                       <LinkedinIcon className="h-4 w-4" />
                     </span>
                     <span>
@@ -123,7 +123,7 @@ export default function TradingContactPage() {
                         href={companyInfo.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#EB8B2E] underline-offset-2 hover:underline"
+                        className="text-[#C9873B] underline-offset-2 hover:underline"
                       >
                         Eagle Wise Business Consultancy (UAE)
                       </a>

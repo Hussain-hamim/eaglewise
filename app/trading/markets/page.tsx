@@ -30,7 +30,7 @@ export default function TradingMarketsPage() {
           <div className="grid gap-5 md:grid-cols-2 md:gap-6">
             <article className="eagle-card p-6 md:p-7">
               <div className="mb-3 flex items-center gap-3">
-                <Package className="h-5 w-5 text-[#EB8B2E]" />
+                <Package className="h-5 w-5 text-[#C9873B]" />
                 <h3 className="text-2xl font-bold tracking-tight">General trading &amp; wholesale</h3>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
@@ -46,7 +46,7 @@ export default function TradingMarketsPage() {
             </article>
             <article className="eagle-card p-6 md:p-7">
               <div className="mb-3 flex items-center gap-3">
-                <ShoppingBag className="h-5 w-5 text-[#EB8B2E]" />
+                <ShoppingBag className="h-5 w-5 text-[#C9873B]" />
                 <h3 className="text-2xl font-bold tracking-tight">E-commerce &amp; digital trading</h3>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
@@ -72,7 +72,7 @@ export default function TradingMarketsPage() {
           <div className="grid gap-5 md:grid-cols-2 md:gap-6">
             <article className="eagle-card p-6 md:p-7">
               <div className="mb-3 flex items-center gap-3">
-                <Truck className="h-5 w-5 text-[#EB8B2E]" />
+                <Truck className="h-5 w-5 text-[#C9873B]" />
                 <h3 className="text-xl font-bold tracking-tight">Khan Naseri Trading Company (Afghanistan)</h3>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
@@ -81,14 +81,14 @@ export default function TradingMarketsPage() {
                 Herbal Bio Amla, alongside the Beauty Vision, My Perfume, and Efolia lines referenced in our profile.
               </p>
               <p className="mt-3 text-sm text-muted-foreground">
-                <a href="/trading/partners#khan-naseri-showcase" className="font-semibold text-[#EB8B2E] underline-offset-2 hover:underline">
+                <a href="/trading/partners#khan-naseri-showcase" className="font-semibold text-[#C9873B] underline-offset-2 hover:underline">
                   View photo showcase
                 </a>
               </p>
             </article>
             <article className="eagle-card p-6 md:p-7">
               <div className="mb-3 flex items-center gap-3">
-                <ClipboardList className="h-5 w-5 text-[#EB8B2E]" />
+                <ClipboardList className="h-5 w-5 text-[#C9873B]" />
                 <h3 className="text-xl font-bold tracking-tight">UAE corridor</h3>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">

@@ -134,7 +134,7 @@ export default function ProfessionalHomePage() {
               >
                 <motion.p
                   variants={fadeInUp}
-                  className="mb-4 inline-flex rounded-full border border-white/5 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#EB8B2E] backdrop-blur-md"
+                  className="mb-4 inline-flex rounded-full border border-white/5 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#C9873B] backdrop-blur-md"
                 >
                   Professional Services · Eaglewise
                 </motion.p>
@@ -161,7 +161,7 @@ export default function ProfessionalHomePage() {
                 >
                   <Link
                     href="/professional/contact"
-                    className="group relative inline-flex h-11 items-center justify-center gap-2 overflow-hidden rounded-full bg-[#EB8B2E] px-6 text-sm font-semibold text-white transition-all hover:bg-[#d97a22] md:h-12 md:px-8 md:text-base"
+                    className="group relative inline-flex h-11 items-center justify-center gap-2 overflow-hidden rounded-full bg-[#C9873B] px-6 text-sm font-semibold text-white transition-all hover:bg-[#B5772F] md:h-12 md:px-8 md:text-base"
                   >
                     <span>Request Consultation</span>
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -188,7 +188,7 @@ export default function ProfessionalHomePage() {
             <div className="grid grid-cols-1 gap-6 divide-y divide-border/40 md:grid-cols-3 md:gap-0 md:divide-x md:divide-y-0">
               <article className="flex flex-col items-center pt-4 first:pt-0 md:items-start md:px-8 md:py-0 md:first:pl-0">
                 <div className="flex items-center gap-2.5">
-                  <CalendarDays className="h-5 w-5 text-[#EB8B2E]" />
+                  <CalendarDays className="h-5 w-5 text-[#C9873B]" />
                   <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-muted-foreground">
                     Established
                   </p>
@@ -197,7 +197,7 @@ export default function ProfessionalHomePage() {
               </article>
               <article className="flex flex-col items-center pt-6 md:items-start md:px-8 md:py-0">
                 <div className="flex items-center gap-2.5">
-                  <Layers className="h-5 w-5 text-[#EB8B2E]" />
+                  <Layers className="h-5 w-5 text-[#C9873B]" />
                   <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-muted-foreground">
                     Service lines
                   </p>
@@ -206,7 +206,7 @@ export default function ProfessionalHomePage() {
               </article>
               <article className="flex flex-col items-center pt-6 md:items-start md:px-8 md:py-0 md:last:pr-0">
                 <div className="flex items-center gap-2.5">
-                  <Globe className="h-5 w-5 text-[#EB8B2E]" />
+                  <Globe className="h-5 w-5 text-[#C9873B]" />
                   <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-muted-foreground">
                     Coverage
                   </p>
@@ -237,7 +237,7 @@ export default function ProfessionalHomePage() {
               />
             </div>
             <div className="px-1 md:px-2">
-              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#EB8B2E]">UAE presence</p>
+              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#C9873B]">UAE presence</p>
               <h2 className="mt-3 text-2xl font-bold tracking-tight text-foreground md:text-4xl">
                 Efficient solutions, financial transparency, sustainable growth
               </h2>
@@ -247,7 +247,7 @@ export default function ProfessionalHomePage() {
               </p>
               <Link
                 href="/professional/services"
-                className="mt-6 inline-flex items-center gap-2 text-base font-semibold text-foreground transition hover:text-[#EB8B2E]"
+                className="mt-6 inline-flex items-center gap-2 text-base font-semibold text-foreground transition hover:text-[#C9873B]"
               >
                 Explore services
                 <ArrowRight className="h-5 w-5" />
@@ -279,7 +279,7 @@ export default function ProfessionalHomePage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 via-secondary/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-6 md:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#EB8B2E]">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#C9873B]">
                   Client delivery
                 </p>
                 <h3 className="mt-2 text-2xl font-bold text-white md:text-3xl">
@@ -292,7 +292,7 @@ export default function ProfessionalHomePage() {
               variants={fadeInUp}
               className="rounded-[2rem] bg-surface p-6 shadow-[0_12px_40px_rgba(7,13,26,0.06)] lg:col-span-5 md:p-8"
             >
-              <div className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#EB8B2E]/12 text-[#EB8B2E]">
+              <div className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#C9873B]/12 text-[#C9873B]">
                 <FileText className="h-5 w-5" />
               </div>
               <h3 className="text-2xl font-bold tracking-tight md:text-3xl">Named UAE consultancy experience</h3>
@@ -302,7 +302,7 @@ export default function ProfessionalHomePage() {
               </p>
               <p className="mt-6 text-sm font-medium text-foreground/70">
                 For consultancy inquiries, use{" "}
-                <Link href="/professional/contact" className="font-semibold text-[#EB8B2E] hover:underline">
+                <Link href="/professional/contact" className="font-semibold text-[#C9873B] hover:underline">
                   the contact form
                 </Link>
                 .
@@ -326,7 +326,7 @@ export default function ProfessionalHomePage() {
               variants={fadeInUp}
               className="rounded-[2rem] bg-surface p-6 shadow-[0_12px_40px_rgba(7,13,26,0.06)] lg:col-span-7 md:p-8"
             >
-              <div className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#EB8B2E]/12 text-[#EB8B2E]">
+              <div className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#C9873B]/12 text-[#C9873B]">
                 <Handshake className="h-5 w-5" />
               </div>
               <h3 className="text-2xl font-bold tracking-tight md:text-3xl">Regional business network</h3>
@@ -340,7 +340,7 @@ export default function ProfessionalHomePage() {
       </section>
 
       <div className="relative overflow-hidden pb-10">
-        <div className="absolute top-0 right-0 -z-10 h-[600px] w-[600px] rounded-full bg-[#EB8B2E]/5 blur-[100px]" />
+        <div className="absolute top-0 right-0 -z-10 h-[600px] w-[600px] rounded-full bg-[#C9873B]/5 blur-[100px]" />
         <div className="absolute bottom-0 left-0 -z-10 h-[500px] w-[500px] rounded-full bg-[#070d1a]/5 blur-[100px]" />
 
         <div className="relative z-10 pt-10">
@@ -366,7 +366,7 @@ export default function ProfessionalHomePage() {
                   >
                     <div className="absolute right-0 top-0 h-32 w-32 -translate-y-16 translate-x-16 rounded-full bg-surface-alt transition-transform duration-500 group-hover:scale-150" />
                     <div className="relative z-10">
-                      <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-surface-alt text-[#EB8B2E] transition-colors group-hover:bg-[#EB8B2E] group-hover:text-white">
+                      <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-surface-alt text-[#C9873B] transition-colors group-hover:bg-[#C9873B] group-hover:text-white">
                         <Icon className="h-6 w-6" />
                       </div>
                       <h3 className="mb-3 text-xl font-bold">{item.title}</h3>
@@ -399,13 +399,13 @@ export default function ProfessionalHomePage() {
                     className="group flex flex-col rounded-[2rem] bg-surface p-8 shadow-[0_8px_30px_rgba(7,13,26,0.06)] transition-all hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(7,13,26,0.1)]"
                   >
                     <div className="mb-6 flex items-center gap-4">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#EB8B2E]/10 text-[#EB8B2E]">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#C9873B]/10 text-[#C9873B]">
                         <Icon className="h-6 w-6" />
                       </div>
                       <h3 className="text-xl font-bold leading-tight">{item.title}</h3>
                     </div>
                     <p className="flex-1 text-base leading-relaxed text-muted-foreground">{item.desc}</p>
-                    <div className="mt-8 flex items-center text-sm font-semibold text-[#EB8B2E] opacity-0 transition-opacity group-hover:opacity-100">
+                    <div className="mt-8 flex items-center text-sm font-semibold text-[#C9873B] opacity-0 transition-opacity group-hover:opacity-100">
                       View catalogue <ArrowRight className="ml-2 h-4 w-4" />
                     </div>
                   </motion.article>
@@ -419,7 +419,7 @@ export default function ProfessionalHomePage() {
       <section className="bg-surface-alt py-16 md:py-24">
         <div className="container-shell">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#EB8B2E]">Testimonials</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#C9873B]">Testimonials</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
               Client feedback highlights
             </h2>
@@ -448,7 +448,7 @@ export default function ProfessionalHomePage() {
                       {Array.from({ length: 5 }).map((_, starIdx) => (
                         <Star
                           key={`${item.author}-star-${starIdx}-${idx}`}
-                          className="h-4 w-4 fill-[#EB8B2E] text-[#EB8B2E]"
+                          className="h-4 w-4 fill-[#C9873B] text-[#C9873B]"
                         />
                       ))}
                     </div>
@@ -465,7 +465,7 @@ export default function ProfessionalHomePage() {
           <div className="mt-8 text-center">
             <Link
               href="/professional/testimonials"
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-6 py-3 text-sm font-semibold text-foreground transition hover:border-[#EB8B2E]/40 hover:text-[#EB8B2E]"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-6 py-3 text-sm font-semibold text-foreground transition hover:border-[#C9873B]/40 hover:text-[#C9873B]"
             >
               View all testimonials
               <ArrowRight className="h-4 w-4" />
@@ -478,7 +478,7 @@ export default function ProfessionalHomePage() {
         <div className="container-shell">
           <div className="flex flex-col items-center justify-between gap-6 overflow-hidden md:flex-row">
             <div className="text-center md:text-left">
-              <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#EB8B2E]">Company mark</p>
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#C9873B]">Company mark</p>
               <p className="mt-1.5 text-sm text-muted-foreground">Registered UAE business identity</p>
             </div>
             <span className="shrink-0 leading-none">

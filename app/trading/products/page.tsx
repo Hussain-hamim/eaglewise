@@ -61,7 +61,7 @@ export default function TradingProductsPage() {
             {supplierLines.map((line) => (
               <article key={line.name} className="eagle-card p-6 md:p-7">
                 <div className="mb-3 flex items-center gap-3">
-                  <Sparkles className="h-5 w-5 text-[#EB8B2E]" />
+                  <Sparkles className="h-5 w-5 text-[#C9873B]" />
                   <h3 className="text-lg font-bold tracking-tight">{line.name}</h3>
                 </div>
                 <p className="text-sm leading-relaxed text-muted-foreground md:text-base">{line.detail}</p>
@@ -102,7 +102,7 @@ export default function TradingProductsPage() {
           </div>
           <p className="mt-6 text-center text-sm text-muted-foreground">
             Full gallery and partner context:{" "}
-            <Link href="/trading/partners#khan-naseri-showcase" className="font-semibold text-[#EB8B2E] underline-offset-2 hover:underline">
+            <Link href="/trading/partners#khan-naseri-showcase" className="font-semibold text-[#C9873B] underline-offset-2 hover:underline">
               Khan Naseri Trading Company showcase
             </Link>
           </p>
@@ -156,7 +156,7 @@ export default function TradingProductsPage() {
             {channels.map((ch) => (
               <article key={ch.name} className="eagle-card p-6 md:p-7">
                 <div className="mb-3 flex items-center gap-3">
-                  <Store className="h-5 w-5 text-[#EB8B2E]" />
+                  <Store className="h-5 w-5 text-[#C9873B]" />
                   <h3 className="text-lg font-bold tracking-tight">{ch.name}</h3>
                 </div>
                 <p className="text-sm leading-relaxed text-muted-foreground md:text-base">{ch.detail}</p>
@@ -164,7 +164,7 @@ export default function TradingProductsPage() {
             ))}
           </div>
           <div className="eagle-card mt-8 flex items-start gap-4 p-6 md:p-7">
-            <Globe className="mt-0.5 h-5 w-5 shrink-0 text-[#EB8B2E]" />
+            <Globe className="mt-0.5 h-5 w-5 shrink-0 text-[#C9873B]" />
             <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
               Strategic expansion includes international trade partnerships, stronger marketplace presence, private label
               brands, wider regional distribution, and enhanced consultancy for cross-border businesses—aligned with
